@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Venia-Capstone/static/css/main.61e25499.css",
+    "main.js": "/Venia-Capstone/static/js/main.41f73247.js",
+    "static/js/787.f1d8e6b8.chunk.js": "/Venia-Capstone/static/js/787.f1d8e6b8.chunk.js",
+    "static/media/banner1.png": "/Venia-Capstone/static/media/banner1.bb7b8afbb76a3bd25233.png",
+    "static/media/Muli-Regular.ttf": "/Venia-Capstone/static/media/Muli-Regular.d08337b78196eb4754a0.ttf",
+    "static/media/white_gold_ring.png": "/Venia-Capstone/static/media/white_gold_ring.746ba4916e2b08ec7904.png",
+    "static/media/mens_cotton_jacket.png": "/Venia-Capstone/static/media/mens_cotton_jacket.95eca0606292516a03cb.png",
+    "static/media/women_suit.png": "/Venia-Capstone/static/media/women_suit.cb63cf2298e117fd62e3.png",
+    "static/media/samsung_TV.png": "/Venia-Capstone/static/media/samsung_TV.831b2a09052a99df9aec.png",
+    "static/media/PP_BTN@2x.png": "/Venia-Capstone/static/media/PP_BTN@2x.6383a0b25b4224c45f65.png",
+    "static/media/sliders.svg": "/Venia-Capstone/static/media/sliders.07a0e59562aded129aac7c8a5259c413.svg",
+    "static/media/share.svg": "/Venia-Capstone/static/media/share.c9452d8d0a01f15f7b30c66f52b97baa.svg",
+    "static/media/trash-2.svg": "/Venia-Capstone/static/media/trash-2.a3e697fde0ae7e80f40a3f3214ef433d.svg",
+    "static/media/align-justify.svg": "/Venia-Capstone/static/media/align-justify.55a6caa32f69af8f52f3799291a36ac0.svg",
+    "static/media/instagram.svg": "/Venia-Capstone/static/media/instagram.098205e681981cff2deaa43da7f8afa7.svg",
+    "index.html": "/Venia-Capstone/index.html",
+    "static/media/shopping-bag.svg": "/Venia-Capstone/static/media/shopping-bag.1ceb7d8208dd4937a06bd6a1ca592bf1.svg",
+    "static/media/arrow-up.svg": "/Venia-Capstone/static/media/arrow-up.bffb5a388e9ce654e32b9665d1dbed6d.svg",
+    "static/media/lock.svg": "/Venia-Capstone/static/media/lock.64439d453537a96d8d81d9817f2dfef8.svg",
+    "static/media/arrow-down.svg": "/Venia-Capstone/static/media/arrow-down.ad1e372bfba7126beaef93d275515815.svg",
+    "static/media/twitter.svg": "/Venia-Capstone/static/media/twitter.3d9f31115be6b897b5d45c0aad4c1c1f.svg",
+    "static/media/heart.svg": "/Venia-Capstone/static/media/heart.a907ab68d10229f05d705226b23d8bf2.svg",
+    "static/media/edit-2.svg": "/Venia-Capstone/static/media/edit-2.d86fb5c57c99ad0d8312adf90283ac77.svg",
+    "static/media/facebook.svg": "/Venia-Capstone/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
+    "static/media/chevron-down.svg": "/Venia-Capstone/static/media/chevron-down.fadc45040e456e5cea02f3cd047ee412.svg",
+    "main.61e25499.css.map": "/Venia-Capstone/static/css/main.61e25499.css.map",
+    "main.41f73247.js.map": "/Venia-Capstone/static/js/main.41f73247.js.map",
+    "787.f1d8e6b8.chunk.js.map": "/Venia-Capstone/static/js/787.f1d8e6b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61e25499.css",
+    "static/js/main.41f73247.js"
+  ]
+}
