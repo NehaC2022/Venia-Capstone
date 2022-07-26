@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: 'Source Serif Pro', serif;
+  }
+  ol,ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  li{
+  line-height: inherit;
+  }
+  a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+img{
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  }

@@ -1,0 +1,82 @@
+.adventure-banner{
+    margin: 0 auto;
+}
+.adventure-banner-image img {
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    padding: 1rem 0;
+
+}
+
+.adventure-banner-content {
+    background-color: $dark-gunmetal;
+    color: $white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: center;
+    padding: 82px 80px;
+
+    h1 {
+        font-size: 37px;
+        font-weight: normal;
+        font-family: Source Serif Pro;
+        // max-width: 326px;
+    }
+    p{
+        font-size: 20px;
+        margin: 1rem 0 2rem;
+    }
+
+    .bar {
+        width: 102px;
+        height: 8px;
+        background-color: $primary-brand;
+        margin: 2rem auto 0;
+        left: 711px;
+        top: 1333px;
+        position: absolute;
+    }
+
+    .btn_device {
+        background-color: transparent;
+        color: $white;
+        width: 180px;
+        height: 40px;
+        border: 1px solid $white;
+        border-radius: 10px;
+        padding: 12px 0;
+    }
+}
+.location-icon{
+    width: 27px;
+    left: -94px;
+    top: -4px;
+    position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    //     .adventure-banner {
+    //         // display: flex;
+    //         // flex-direction: column-reverse;
+    //         padding: 0;
+    //     }
+    .adventure-banner-content {
+        height: 19.375rem !important;
+        margin: -20% 7% 0;
+        width: 85% !important;
+    }
+
+    //     .adventure-banner-image {
+    //         padding: 0;
+    //     }
+    //     .adventure-banner-image img{
+    //         height: 12rem!important;
+    //     }
+    .adventure_heading {
+        visibility: hidden;
+    }
+}

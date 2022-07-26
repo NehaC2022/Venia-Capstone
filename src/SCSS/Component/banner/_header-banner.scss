@@ -1,0 +1,49 @@
+.hero-banner-image{
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    padding: 1rem 0;
+    
+}
+.header-banner-content{
+    background-color: $color-grey-D4;
+    color: $color-white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: center;
+}
+.header-banner-content h1{
+    font-size: 48px; 
+    font-weight: normal;
+    font-family: Source Serif Pro; 
+}
+.bar{
+    width: 102px;
+    height: 8px;
+    background-color: $color-primary-band;
+    margin : 2rem auto 0;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-banner {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .header-banner-content{
+        height: 15rem!important;
+        margin: -20% 7% 0;
+        width: 85%!important;
+    }
+    .header-banner-image {
+        padding: 0;
+    }
+    .header-banner-image img{
+        height: 12rem!important;
+    }
+    .hero-heading2{
+        visibility: hidden;
+    }
+}
+

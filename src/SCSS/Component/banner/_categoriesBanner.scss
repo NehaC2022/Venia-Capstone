@@ -1,0 +1,36 @@
+.categories{
+    position: relative;
+    top: -31px;
+}
+.categories > div{
+    padding-right: 0.5rem;
+}
+.categories > div :last-child{
+    padding-right: 0;
+}
+.category-info{
+    color: $white;
+    background-color: $grey-d4;
+    text-align: left;
+    border-bottom: 0.5rem solid $primary-brand;
+    position: relative;
+    top: -30px;
+
+    h6{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    p{
+        @extend .regualr-body-m-16-;
+        color : $white;
+    }
+}
+.category-img{
+    height: 150px;
+}
+.categories-data{
+    background-color: $white;
+}
+// .{
+//     border-bottom: 1px solid red;
+// }

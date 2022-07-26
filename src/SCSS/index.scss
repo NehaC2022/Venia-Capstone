@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Muli;
+    src: url(./vendor/muli/muli/Muli-Regular.ttf)
+}
+
+@import './vendor/aem-grid';
+@import './vendor/cutom-container';
+@import './library/reset';
+@import './library/variable';
+@import './Component/Navbar/navbar';
+@import './Component//banner//banner';
+@import './Component//footer/footer';
+@import './Component/banner/categoriesBanner';
+@import './Component/banner/signatureBanner';
+@import './Component/banner/adventureBanner';
+@import './Component/banner/header-banner';
+@import './Component/product/product';
+@import './Component/product/filter';
+@import './Component/shopping-cart/cart';
+
+

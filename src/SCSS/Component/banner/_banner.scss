@@ -1,0 +1,44 @@
+.banner-content {
+    background-color: $primary-grey-L1;
+    text-align: left;
+    padding: 4.5rem 0;
+
+    h1 {
+        @extend .display-xl-48-dekstop-only ;
+        // color: $dark-gunmetal-A1;
+        // font-size: 47px;
+        // font-weight: 600;
+        // max-width: 442px;
+    }
+    p{
+        max-width: 552px;
+        color: $dark-gunmetal-A1;
+        font-size: 16px;
+        margin: 0.5rem 0 1.5rem;
+    }
+}
+
+.Banner-content-img {
+    width: auto;
+    padding-top :8rem;
+}
+.btn_shop{
+    background-color: $primary-brand;
+    color: $white;
+    border: 1px solid $primary-brand;
+    width: 221px;
+    height: 40px;
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .banner-content{
+        text-align: center;
+        h1{
+            font-size: 36px;
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .banner-content {
+        padding: 1.5rem 0;
+    }
+}

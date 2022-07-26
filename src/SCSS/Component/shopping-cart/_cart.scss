@@ -1,0 +1,154 @@
+.shopping-cart {
+    color: $color-grey-D2;
+    h1{
+        font-family: 'Mulish', sans-serif;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 48px;
+    }
+    .underbar {
+        width: 102px;
+        height: 8px;
+        background-color: $color-primary-band;
+        border: none;
+        margin: 10px 0 40px;
+    }
+
+    .cart-btn button {
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        border: 2px solid $color-Grey-L2;
+    }
+        .cart-input {
+            width: 95px;
+            height: 40px;
+            margin: 0 0.75rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            border: 2px solid $color-Grey-L2;
+        }
+        ul {
+            padding-right: 1rem;
+            padding-left: 3rem;
+            li{
+            list-style: none;
+            text-align: left;
+            margin-bottom: 0.5rem;
+            font-size: 12px;
+            }
+            img{
+                padding-right: 0.5rem;
+                vertical-align: middle;
+            }
+        }
+}
+.cart-info >div{
+    padding-bottom: 3rem;
+}
+.cart-product{
+    text-align: left;
+    padding-right: 1.5rem;
+    img {
+        width: inherit;
+    }
+    h6{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+}
+.cart-icon button{
+    background-color: $color-white;
+    border: none;
+}
+.pricing-summary{
+    border: 1px solid $color-grey-N1;
+    padding: 2rem 2rem 2.5rem;
+    
+    p{
+        text-align: left;
+    }
+    span{
+        float: right;
+    }
+    h5{
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+    h6{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 1rem 0 2.5rem;
+    }
+    button{
+        padding: 0.688rem 4.375rem;
+    border-radius:1.75rem;
+    color: $color-white;
+    background-color: $color-primary-band;
+    border: none;
+    margin: 0 2.625rem;
+    }
+    .pp-button img{
+        width: 77%;
+        margin-top: 1.5rem;
+    }
+}
+.primary-info{
+    margin:2.5rem 0 4rem;
+}
+.accordion {
+    padding: auto;
+    // background-color: #eee;
+    color: $color-grey-D2;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    transition: 0.4s;
+    background-color: #fff;
+    border: 1px solid $color-grey-N1;
+   
+  }
+  .accordion span
+  {
+    float: right;
+  }
+
+  
+// Style the accordion panel. Note: hidden by default /
+  .panel {
+    padding: 0 18px;
+    background-color: $color-white;
+    display: none;
+    overflow: hidden;
+    border: 1px solid black;
+  }
+
+@media (min-width: 320px) and (max-width: 767px){
+    .shopping-cart h1{
+        font-size:2.25rem;
+    }
+    .cart-info > div {
+        margin-bottom: 0;
+    }
+    .pricing-summary button {
+        padding: 0.688rem 2.375rem;
+        margin: 0;
+    
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .pricing-summary button {
+        padding: 0.688rem 2.375rem;
+        margin: 0;
+    
+    }
+}

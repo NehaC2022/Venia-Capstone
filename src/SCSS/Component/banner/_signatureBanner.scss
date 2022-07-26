@@ -1,0 +1,47 @@
+.signature-banner-container{
+    margin: 3rem 0;
+}
+.signature-banner-content{
+    text-align: left;
+    color: $dark-gunmetal-A1;
+    padding-left: 2.813rem;
+    // display: flex;
+    // flex-direction: column;
+    h1{
+        max-width: 441px;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 50px;
+        padding-bottom: 0.5rem;
+    }
+    strong{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    p{
+        max-width: 631px;
+        font-weight: 16px;
+        font-weight: normal;
+        padding: 1rem 0 1.5rem;
+    }
+    .btn_collection{
+        background-color: transparent;
+        color: $primary-brand;
+        width: 221px;
+        height: 40px;
+        border: 1px solid $primary-brand;
+        margin-right: 2.078rem;
+    }
+    .border-div{
+        background-color: $primary-brand;
+        height: 8px;
+        margin-top: 3.5rem;
+        width: 102px;
+    }
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .signature-banner-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
