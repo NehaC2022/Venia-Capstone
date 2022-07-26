@@ -96,7 +96,7 @@ export default function ShoppingCart() {
                             <p>Estimated tax<span>$ 23.28</span></p>
                             <p>Estimated shipping<span>FREE</span></p>
                             <h6>Estimated Total<span>$ {productCart}</span></h6>
-                            <button><img src={require('../../images/lock.svg').default} alt='Lock' aria-label="LockIcon" />CHECKOUT</button>
+                            <button className="checkBtn"><img src={require('../../images/lock.svg').default} alt='Lock' aria-label="LockIcon"/>CHECKOUT</button>
                             <div className='pp-button'><img src={require('../../images/PP_BTN@2x.png')} alt='pp-button' /></div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Button from '../Button';
 
 export default function Banner() {
@@ -12,7 +13,7 @@ export default function Banner() {
                         <div className='aem-GridColumn aem-GridColumn--default--11 '>
                             <h1>Shop the new Signature Collection</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
-                            <Button className="btn_shop" text="SHOP NOW" />
+                            <NavLink to="/producthome"><Button className="btn_shop" text="SHOP NOW" /></NavLink>
                         </div>
                     </div>
                 </div>

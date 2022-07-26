@@ -4,7 +4,7 @@ import HeaderBanner from '../Banner/HeaderBanner'
 import ProductTeaser from './ProductTeaser'
 // import axios from "axios";
 
-export default function Home() {
+export default function ProductHome() {
     return (
         <div>
             <HeaderBanner />

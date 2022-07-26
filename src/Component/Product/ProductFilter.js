@@ -1,7 +1,7 @@
 import React from 'react';
 import Filter from './Filter';
 
-export default function ProductFilter() {
+export default function ProductFilter({filterProduct,isSelected}) {
     return (
         <div className='filter-content'>
             <h5>Clothing / Women’s / Outerwear</h5>
@@ -9,7 +9,7 @@ export default function ProductFilter() {
                 <p> <img src={require('../../images/sliders.svg').default} alt='slider' />Filter Results</p>
                 <p> <img src={require('../../images/arrow-up.svg').default} alt='up-arrow' /> <img src={require('../../images/arrow-down.svg').default} alt='down-arrow' />Sort Products</p>
             </div>
-            <Filter />
+            <Filter filterProduct={filterProduct}/>
         </div>
     )
 }

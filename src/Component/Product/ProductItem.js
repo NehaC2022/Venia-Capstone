@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import ProductDescription from './ProductDescription';
 import Rating from './Rating';
 import { handleAction } from '../../redux/cartSlice';
+import SimpleImageSlider from "react-simple-image-slider";
 
 export default function ProductItem({ title, price, img, description, product,rating }) {
     const dispatch = useDispatch();
@@ -26,6 +27,14 @@ export default function ProductItem({ title, price, img, description, product,ra
    let handleChange = (e)=>{
      setNum(e.target.value);
     }
+    const images = [
+        { url: img },
+        { url: img },
+        { url: img },
+        { url: img },
+        { url: img }
+    
+      ];
     return (
         <div>
             <div className='aem-Grid aem-Grid--12 product-container'>
@@ -40,10 +49,19 @@ export default function ProductItem({ title, price, img, description, product,ra
                                 <img src={img} alt='ProductImage' aria-label='product-icon'/>
                             </figure>
                         </div>
-                        <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 large-image'>
+                        {/* <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 large-image'>
                             <figure>
                                 <img src={img} alt='ProductImage' aria-label='product-icon'/>
                             </figure>
+                        </div> */}
+                        <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 large-image'>
+                        <SimpleImageSlider
+                            width={400}
+                            height={550}
+                            images={images}
+                            showBullets={true}
+                            showNavs={true}
+                          />
                         </div>
                     </div>
                 </div>
@@ -59,7 +77,6 @@ export default function ProductItem({ title, price, img, description, product,ra
                         <img src={require("../../images/star.svg").default} alt="StarImage" aria-label='star-icon'/>
                     </div> */}
                     {/* <Rating rating={rating}/> */}
-                    {/* <p className='description'>{description}</p> */}
                     <ProductDescription description={description}/>
                     <div className='product-btn'>
                         <h5>Quantity</h5>

@@ -8,7 +8,7 @@
     .underbar {
         width: 102px;
         height: 8px;
-        background-color: $color-primary-band;
+        background-color: $primary-brand;
         border: none;
         margin: 10px 0 40px;
     }
@@ -87,15 +87,19 @@
     }
     button{
         padding: 0.688rem 4.375rem;
-    border-radius:1.75rem;
-    color: $color-white;
-    background-color: $color-primary-band;
-    border: none;
-    margin: 0 2.625rem;
+        border-radius:1.75rem;
+        color: $color-white;
+        background-color: $primary-brand;
+        border: none;
+        margin: 0 1.625rem;
     }
     .pp-button img{
         width: 77%;
         margin-top: 1.5rem;
+    }
+    .checkBtn img{
+        vertical-align: bottom;
+        padding-right: 8px;
     }
 }
 .primary-info{

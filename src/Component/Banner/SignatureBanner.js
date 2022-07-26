@@ -16,7 +16,7 @@ export default function SignatureBanner() {
                     </div>
                 </div>
                 <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--5 aem-GridColumn--phone--12 banner-image'>
-                    <img src={require('../../images/banner-sec.png')} alt='men with printed shirt' aria-label='men with printed shirt' />
+                    <img src={require('../../images/banner-sec.png')} alt='men with printed shirt' aria-label='men with printed shirt'/>
                 </div>
             </div>
         </div>

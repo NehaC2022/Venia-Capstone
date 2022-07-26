@@ -5642,6 +5642,10 @@ img {
   width: 102px;
 }
 
+.banner-image img {
+  width: 100%;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   .signature-banner-container {
     display: -webkit-box;
@@ -5699,7 +5703,7 @@ img {
   width: 102px;
   height: 8px;
   background-color: #E26A2C;
-  margin: 2rem auto 0;
+  margin: 4rem auto 0;
   left: 711px;
   top: 1333px;
   position: absolute;
@@ -5718,7 +5722,7 @@ img {
 .location-icon {
   width: 27px;
   left: -94px;
-  top: -4px;
+  top: -20px;
   position: relative;
 }
 
@@ -5767,7 +5771,7 @@ img {
 .bar {
   width: 102px;
   height: 8px;
-  background-color: #1F39FF;
+  background-color: #E26A2C;
   margin: 2rem auto 0;
 }
 
@@ -5955,6 +5959,43 @@ select {
   border-bottom: 1px solid #172026;
 }
 
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-outer::before {
+  content: '\f005  \f005  \f005  \f005  \f005';
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.stars-inner::before {
+  content: '\f005  \f005  \f005  \f005  \f005';
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  color: black;
+}
+
+.number-rating {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #000000;
+}
+
 .cart-btn button {
   border-radius: 50%;
   width: 2.5rem;
@@ -5976,7 +6017,7 @@ select {
 }
 
 .cart {
-  background-color: #1F39FF;
+  background-color: #E26A2C;
   width: auto;
   padding: 0.688rem 6.938rem;
   border-radius: 28px;
@@ -6196,7 +6237,7 @@ select {
 .shopping-cart .underbar {
   width: 102px;
   height: 8px;
-  background-color: #1F39FF;
+  background-color: #E26A2C;
   border: none;
   margin: 10px 0 40px;
 }
@@ -6291,14 +6332,19 @@ select {
   padding: 0.688rem 4.375rem;
   border-radius: 1.75rem;
   color: #FFFFFF;
-  background-color: #1F39FF;
+  background-color: #E26A2C;
   border: none;
-  margin: 0 2.625rem;
+  margin: 0 1.625rem;
 }
 
 .pricing-summary .pp-button img {
   width: 77%;
   margin-top: 1.5rem;
+}
+
+.pricing-summary .checkBtn img {
+  vertical-align: bottom;
+  padding-right: 8px;
 }
 
 .primary-info {

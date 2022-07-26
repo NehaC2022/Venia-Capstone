@@ -39,6 +39,11 @@
         width: 102px;
     }
 }
+.banner-image{
+    img{
+        width: 100%;
+    }
+}
 @media (min-width: 320px) and (max-width: 768px){
     .signature-banner-container{
         display: flex;
