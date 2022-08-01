@@ -8,8 +8,8 @@
 @import './library/reset';
 @import './library/variable';
 @import './Component/Navbar/navbar';
-@import './Component//banner//banner';
-@import './Component//footer/footer';
+@import './Component/banner//banner';
+@import './Component/footer/footer';
 @import './Component/banner/categoriesBanner';
 @import './Component/banner/signatureBanner';
 @import './Component/banner/adventureBanner';
@@ -17,5 +17,17 @@
 @import './Component/product/product';
 @import './Component/product/filter';
 @import './Component/shopping-cart/cart';
-
+@import '../Component/CheckOut/checkout';
+@import '../Component/ContactInfo/contactInfo';
+@import '../Component/shippingInformation/shipping-info';
+@import '../Component/SignInExpressCheckout/signInExpressCheckout';
+@import '../Component/PricingSummary/PricingSummary';
+@import '../Component/ShippingInfoDetails/shippingInfoDetails';
+@import '../Component/ShippingMethod/shipping-method';
+@import '../Component/ShippingMethodInfo/shipping-method-info.scss';
+@import '../Component/PaymentInfo/payment-info';
+@import '../Component/PlaceOrder/placeorder';
+@import '../Component/OrderProduct/order-product';
+@import '../Pages/OrderConfirmation/order-confirmation';
+@import '../Component/PaymentInfoDetails/payment-info-details';
 

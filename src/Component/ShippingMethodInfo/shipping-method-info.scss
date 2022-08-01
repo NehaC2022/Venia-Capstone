@@ -1,0 +1,32 @@
+.shipping-method-content {
+    color: $dark-gunmetal-A1;
+    letter-spacing: 0px;
+    border: 1px solid $primary-grey-L3;
+    margin: 24px 0 32px;
+    padding: 24px 24px 32px;
+
+    h6 {
+        text-align: left;
+        font: normal normal 600 16px/20px Muli;
+        letter-spacing: 0px;
+    }
+
+    .edit-icon {
+        text-align: right;
+
+        p {
+            display: inline;
+            font: normal normal 600 16px/22px Muli;
+            color: $primary-brand;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+    }
+    .shipping-method-data{
+        margin-top: 1rem;
+        font: normal normal normal 16px/24px Muli;
+        color: $grey-D1;
+    }
+}

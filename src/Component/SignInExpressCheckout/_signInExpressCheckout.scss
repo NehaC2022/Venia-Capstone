@@ -1,0 +1,23 @@
+.signIn_container {
+    background: var(--white) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    padding: 24px 0 24px 22px;
+    margin-bottom: 24px;
+
+    h6 {
+        text-align: left;
+        font: normal normal 600 20px/25px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+    }
+
+    .signIn_button {
+        background: var(--white) 0% 0% no-repeat padding-box;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid #D4703D;
+        padding: 11px 49px;
+        color: #D4703D;
+    }
+}

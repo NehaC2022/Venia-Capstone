@@ -1,0 +1,23 @@
+.product-summary{
+    text-align: left;
+    letter-spacing: 0px;
+    color: $dark-gunmetal-A1;
+
+    h5{
+        font: normal normal 600 16px/20px Muli;
+        margin-bottom: 1.5rem;
+    }
+    h6{
+       font: normal normal 600 16px/20px Muli;
+    }
+    .cart-product{
+        margin-bottom: 2rem;
+        p{
+            font: normal normal normal 16px/24px Muli;
+        }
+    }
+    // .product-summary-content{
+    //     margin-bottom: 2rem;
+    // }
+}
+

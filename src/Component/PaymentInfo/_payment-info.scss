@@ -1,0 +1,61 @@
+.payment-content {
+    letter-spacing: 0px;
+    color: $dark-gunmetal-A1;
+
+    h5 {
+        font: normal normal 600 20px/25px Muli;
+    }
+
+    .radio-button {
+        padding-top: 20px;
+
+        input {
+            width: 24px;
+            height: 24px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 2px solid $primary-brand;
+            accent-color: $primary-brand;
+            vertical-align: sub;
+
+        }
+
+        label {
+            padding-left: 15px;
+            font: normal normal 600 16px/24px Muli;
+            color: $color-grey-D3;
+        }
+    }
+
+    input {
+        font: normal normal normal 16px/19px Muli;
+        color: #91959C;
+        width: 100%;
+        padding: 11px 0 13px 12px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid #B5B7BC;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+    label{
+        font: normal normal 600 16px/24px Muli;
+        letter-spacing: 0px;
+        color: $color-grey-D3;
+    }
+}
+.payment-button{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid $cerise;
+    color: $primary-brand;
+    padding: 11px 58px;
+}
+.paypal-button{
+    border-bottom: 1px solid $primary-grey-L3; 
+    border-top : 1px solid $primary-grey-L3;
+    margin: 20px 0 40px;
+}
+.payment-proceed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}

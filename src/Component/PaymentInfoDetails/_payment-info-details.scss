@@ -1,0 +1,63 @@
+.payment-info-content {
+    color: $dark-gunmetal-A1;
+    letter-spacing: 0px;
+    padding: 24px 24px 32px;
+
+    h6 {
+        text-align: left;
+        font: normal normal 600 16px/20px Muli;
+        letter-spacing: 0px;
+    }
+
+    .edit-icon {
+        text-align: right;
+
+        p {
+            display: inline;
+            font: normal normal 600 16px/22px Muli;
+            color: $primary-brand;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+    }
+
+    .payment-data {
+        margin-top: 1rem;
+        font: normal normal normal 16px/24px Muli;
+        color: $grey-D1;
+    }
+}
+
+.place-order-button {
+    background: #E26A2C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #39373729;
+    border: 2px solid #D4703D;
+    color: #FFF;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 11px 100px;
+    display: block;
+}
+
+.place-order {
+    padding: 40px 0 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.policy {
+    font: normal normal normal 16px/24px Muli;
+    text-align: center;
+    margin-bottom: 6rem;
+    a{
+        text-decoration: underline;
+        font: normal normal 600 16px/24px Muli;
+    }
+}
+.order-product-border{
+    border: 1px solid $primary-grey-L3;
+}

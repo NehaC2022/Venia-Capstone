@@ -1,0 +1,40 @@
+.shipping-method-content {
+    color:$dark-gunmetal-A1;
+    h5 {
+        text-align: left;
+        font: normal normal 600 20px/25px Muli;
+        letter-spacing: 0px;
+    }
+
+    .radio-button {
+        padding-top: 20px;
+
+        input {
+            width: 24px;
+            height: 24px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 2px solid $primary-brand;
+            accent-color: $primary-brand;
+
+        }
+
+        label {
+            padding-left: 15px;
+            font: normal normal normal 16px/24px Muli;
+        }
+    }
+
+    .payment-button {
+        color: $cerise;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid $cerise;
+        padding: 11px 57px;
+    }
+    .payment-proceed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 42px 0 48px;
+    }
+
+}

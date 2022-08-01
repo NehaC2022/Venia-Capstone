@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductItem from './ProductItem';
-// import { useSelector } from 'react-redux';
 
 export default function Product() {
   const [data, setData] = useState([]);

@@ -1,6 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux/es/exports';
 import { handleAction } from '../../redux/cartSlice';
+import { NavLink } from "react-router-dom";
 
 export default function ShoppingCart() {
     const cartData = useSelector((value) =>
@@ -10,7 +11,7 @@ export default function ShoppingCart() {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(handleAction.getTotals());
-      }, [productCart, dispatch]);
+    }, [productCart, dispatch]);
     return (
         <section className='container'>
             <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 shopping-cart container'>
@@ -28,7 +29,7 @@ export default function ShoppingCart() {
                                         <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
                                             <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 cart-product'>
                                                 <div className='aem-GridColumn aem-GridColumn--default--6'>
-                                                    <img src={value.image} alt='Product' aria-label="productImage"/>
+                                                    <img src={value.image} alt='Product' aria-label="productImage" />
                                                 </div>
                                                 <div className='aem-GridColumn aem-GridColumn--default--6'>
                                                     <h6>{value.title}</h6>
@@ -40,26 +41,26 @@ export default function ShoppingCart() {
                                         </div>
                                         <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12  '>
                                             <div className='cart-btn'>
-                                                <button aria-label="decrement-Button" onClick={()=>{return dispatch(handleAction.decrementQnt(value))}}>-</button>
+                                                <button aria-label="decrement-Button" onClick={() => { return dispatch(handleAction.decrementQnt(value)) }}>-</button>
                                                 <input type="text" value={value.quantity} className='cart-input' />
-                                                <button aria-label="Increment-Button" onClick={()=>{return dispatch(handleAction.incrementQnt(value))}}>+</button>
-                                                
+                                                <button aria-label="Increment-Button" onClick={() => { return dispatch(handleAction.incrementQnt(value)) }}>+</button>
+
                                             </div>
                                         </div>
                                         <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--hide cart-icon'>
                                             <ul>
                                                 <li>
-                                                    <button aria-label="edit"><img src={require('../../images/edit-2.svg').default} alt='Edit' aria-label="EditIcon"/>Edit item</button>
+                                                    <button aria-label="edit"><img src={require('../../images/edit-2.svg').default} alt='Edit' aria-label="EditIcon" />Edit item</button>
                                                 </li>
                                                 <li>
-                                                    <button aria-label="remove" onClick={()=>{return dispatch(handleAction.removeFromCart(value.id))}}><img src={require('../../images/trash-2.svg').default} alt='Trash' aria-label="TrashIcon"/>Remove</button>
+                                                    <button aria-label="remove" onClick={() => { return dispatch(handleAction.removeFromCart(value.id)) }}><img src={require('../../images/trash-2.svg').default} alt='Trash' aria-label="TrashIcon" />Remove</button>
                                                 </li>
                                                 <li>
-                                                    <button aria-label="Save"><img src={require('../../images/heart.svg').default} alt='Save' aria-label="SaveIcon"/>Save for later</button>
+                                                    <button aria-label="Save"><img src={require('../../images/heart.svg').default} alt='Save' aria-label="SaveIcon" />Save for later</button>
                                                 </li>
                                             </ul>
-                                            
-                                            
+
+
                                         </div>
                                     </div>
                                 </>
@@ -68,24 +69,24 @@ export default function ShoppingCart() {
                             )
                         })}
                         <div className='aem-Grid aem-Grid--12 primary-info'>
-                <div className='aem-GridColumn aem-GridColumn--default--11 aem-GridColumn--phone--12'>
-                    <button className="accordion" aria-label="accordian-button">Estimate your Shipping <span>shipping to 91001 <img src={require('../../images/chevron-down.svg').default} alt='Chevron' aria-label="Chevron-icon"/> </span></button>
-                    <div className="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
+                            <div className='aem-GridColumn aem-GridColumn--default--11 aem-GridColumn--phone--12'>
+                                <button className="accordion" aria-label="accordian-button">Estimate your Shipping <span>shipping to 91001 <img src={require('../../images/chevron-down.svg').default} alt='Chevron' aria-label="Chevron-icon" /> </span></button>
+                                <div className="panel">
+                                    <p>Lorem ipsum...</p>
+                                </div>
 
-                    <button className="accordion" aria-label="accordian-button">Enter a Coupon Code<span>20%discount applied <img src={require('../../images/chevron-down.svg').default} alt='Chevron' aria-label="Chevron-icon"/></span></button>
-                    <div className="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
+                                <button className="accordion" aria-label="accordian-button">Enter a Coupon Code<span>20%discount applied <img src={require('../../images/chevron-down.svg').default} alt='Chevron' aria-label="Chevron-icon" /></span></button>
+                                <div className="panel">
+                                    <p>Lorem ipsum...</p>
+                                </div>
 
-                    <button className="accordion" aria-label="accordian-button">Apply Gift Card </button>
-                    <div className="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
+                                <button className="accordion" aria-label="accordian-button">Apply Gift Card </button>
+                                <div className="panel">
+                                    <p>Lorem ipsum...</p>
+                                </div>
 
-                </div>
-            </div>
+                            </div>
+                        </div>
                     </div>
                     <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 pricing-summary'>
                         <h5>Pricing Summary</h5>
@@ -96,7 +97,10 @@ export default function ShoppingCart() {
                             <p>Estimated tax<span>$ 23.28</span></p>
                             <p>Estimated shipping<span>FREE</span></p>
                             <h6>Estimated Total<span>$ {productCart}</span></h6>
-                            <button className="checkBtn"><img src={require('../../images/lock.svg').default} alt='Lock' aria-label="LockIcon"/>CHECKOUT</button>
+                            <NavLink to="/checkout">
+                                <button className="checkBtn">
+                                    <img src={require('../../images/lock.svg').default} alt='Lock' aria-label="LockIcon" />CHECKOUT</button>
+                            </NavLink>
                             <div className='pp-button'><img src={require('../../images/PP_BTN@2x.png')} alt='pp-button' /></div>
                         </div>
                     </div>

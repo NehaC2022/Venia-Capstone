@@ -49,8 +49,7 @@ export default function ProductCard({ data }) {
           itemsCountPerPage={9}
           totalItemsCount={data.length}
           pageRangeDisplayed={5}
-          onChange={paginate}
-        />
+          onChange={paginate}/>
       </div>
     </>
   )

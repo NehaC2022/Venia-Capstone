@@ -49,7 +49,7 @@ export default function ProductTeaser() {
   }
 
   const filterProduct = (cat) => {
-    const updatedList = data.filter((x) => x.category === cat);
+    const updatedList = products.filter((x) => x.category === cat.category);
     console.log("categories", updatedList);
     // setProducts(updatedList);
     setData(updatedList);
