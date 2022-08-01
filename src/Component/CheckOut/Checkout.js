@@ -6,6 +6,7 @@ import ShippingMethod from '../ShippingMethod/ShippingMethod';
 import PaymentInfo from '../PaymentInfo/PaymentInfo';
 import PlaceOrder from '../PlaceOrder/PlaceOrder';
 
+
 export default function Checkout() {
     return (
         <section className='aem-Grid aem-Grid--12 container checkout'>
