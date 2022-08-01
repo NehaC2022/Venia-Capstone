@@ -9,7 +9,7 @@ export default function AdventureBanner() {
             </div>
             <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 adventure-banner-content'>
                 <h1>Conquer your </h1>
-                <h1 className='adventure_heading'> next adventure trek</h1>
+                <h1 className='adventure_heading'> next adventure</h1>
                 <p>Lorem Ipsum Dolor Tempor</p>
                 <Button className="btn_device" text="SHOP Device" />
                 <img src={require('../../images/map-pin.svg').default} alt='Location' aria-label='Location' className='location-icon'
