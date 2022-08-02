@@ -14,7 +14,7 @@ export default function AdventureBanner() {
                 <Button className="btn_device" text="SHOP Device" />
                 <img src={require('../../images/map-pin.svg').default} alt='Location' aria-label='Location' className='location-icon'
                 /> 
-                <div className='bar'></div>
+                {/* <div className='bar'></div> */}
             </div>
         </section>
     )

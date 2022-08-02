@@ -39,7 +39,7 @@ export default function Navbar() {
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--6 icon">
                     <NavLink exact to="/cart" className="cart-icon">
-                        <img src={require('../../images/shopping-bag.svg').default} alt="Shopping Bag" aria-label='shoppingBag-icon' />{totalCartItem}
+                        <img src={require('../../images/shopping-bag.svg').default} alt="Shopping Bag" aria-label='shoppingBag-icon' /><span>{totalCartItem}</span>
                     </NavLink>
                 </div>
             </nav>

@@ -5309,7 +5309,7 @@ img {
   color: var(--unnamed-color-172026);
 }
 
-.regualr-body-m-16-, .category-info p {
+.regualr-body-m-16- {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -5370,6 +5370,7 @@ img {
 .navbar ul li {
   padding-right: 2rem;
   color: #FFFFFF;
+  font: normal normal 600 16px/24px Muli;
 }
 
 .navbar .icon {
@@ -5378,6 +5379,19 @@ img {
 
 .navbar .cart-icon {
   color: #FFFFFF;
+}
+
+.navbar .cart-icon span {
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  right: 106px;
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+  background: #FDA65D;
+  border-radius: 50%;
 }
 
 .navbar img {
@@ -5434,8 +5448,9 @@ img {
 .banner-content p {
   max-width: 552px;
   color: #172026;
-  font-size: 16px;
   margin: 0.5rem 0 1.5rem;
+  font: normal normal normal 16px/24px Muli;
+  color: #172026;
 }
 
 .Banner-content-img {
@@ -5456,7 +5471,8 @@ img {
     text-align: center;
   }
   .banner-content h1 {
-    font-size: 36px;
+    font: normal normal 600 36px/45px Source Serif Pro;
+    color: #1B252C;
   }
 }
 
@@ -5470,14 +5486,19 @@ img {
   text-align: left;
   padding-top: 12px;
   padding-bottom: 2rem;
+  letter-spacing: 0px;
+}
+
+.upperFooter p {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  color: #545D63;
 }
 
 .upperFooter ul li a {
   text-decoration: none;
+  font: normal normal normal 16px/24px Muli;
   color: #545D63;
-  font-size: 15px;
-  line-height: 8px;
-  font-weight: 400;
 }
 
 .upperFooter ul li {
@@ -5486,9 +5507,10 @@ img {
 
 .upperFooter h6 {
   color: #172026;
-  font-size: 16px;
   margin-bottom: 1rem;
   margin-top: 2rem;
+  text-align: left;
+  font: normal normal 600 16px/24px Muli;
 }
 
 .upperFooter img {
@@ -5515,6 +5537,8 @@ img {
 }
 
 .lower-footer p {
+  text-align: center;
+  font: normal normal normal 14px/18px Muli;
   color: #545D63;
 }
 
@@ -5524,8 +5548,10 @@ img {
 
 .lower-footer ul li {
   display: inline;
-  text-align: right;
   padding-left: 19px;
+  text-align: right;
+  text-decoration: underline;
+  font: normal normal normal 14px/18px Proxima Nova;
 }
 
 .lower-footer img {
@@ -5582,15 +5608,21 @@ img {
   border-bottom: 0.5rem solid #E26A2C;
   position: relative;
   top: -30px;
+  letter-spacing: 0px;
+  padding: 17px 0 21px 38px;
 }
 
 .category-info h6 {
-  font-size: 24px;
-  font-weight: 600;
+  text-align: left;
+  font: normal normal 600 24px/30px Source Serif Pro;
+  color: #FFFFFF;
 }
 
 .category-info p {
   color: #FFFFFF;
+  text-align: left;
+  font: normal normal normal 16px/23px Muli;
+  letter-spacing: 0.32px;
 }
 
 .category-img {
@@ -5602,33 +5634,30 @@ img {
 }
 
 .signature-banner-container {
-  margin: 3rem 0;
+  margin: 0 0 3rem;
 }
 
 .signature-banner-content {
   text-align: left;
   color: #172026;
   padding-left: 2.813rem;
+  letter-spacing: 0px;
 }
 
 .signature-banner-content h1 {
   max-width: 441px;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 50px;
   padding-bottom: 0.5rem;
+  font: normal normal 600 48px/60px Source Serif Pro;
 }
 
 .signature-banner-content strong {
-  font-size: 20px;
-  font-weight: 600;
+  font: normal normal 600 20px/25px Muli;
 }
 
 .signature-banner-content p {
   max-width: 631px;
-  font-weight: 16px;
-  font-weight: normal;
   padding: 1rem 0 1.5rem;
+  font: normal normal normal 16px/24px Muli;
 }
 
 .signature-banner-content .btn_collection {
@@ -5661,10 +5690,21 @@ img {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .signature-banner-content {
+    text-align: center;
+    padding: 0;
+  }
+  .signature-banner-content h1 {
+    font: normal normal 600 36px/45px Source Serif Pro;
+  }
+  .signature-banner-content .btn_collection {
+    margin: 24px 0 0;
+  }
 }
 
 .adventure-banner {
   margin: 0 auto;
+  margin-bottom: 8rem;
 }
 
 .adventure-banner-image img {
@@ -5690,18 +5730,19 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 82px 80px;
+  padding: 82px 69px;
+  letter-spacing: 0px;
 }
 
 .adventure-banner-content h1 {
-  font-size: 37px;
-  font-weight: normal;
-  font-family: Source Serif Pro;
+  text-align: left;
+  font: normal normal 600 48px/60px Source Serif Pro;
+  color: #FFFFFF;
 }
 
 .adventure-banner-content p {
-  font-size: 20px;
   margin: 1rem 0 2rem;
+  font: normal normal 600 20px/25px Muli;
 }
 
 .adventure-banner-content .bar {
@@ -5709,7 +5750,7 @@ img {
   height: 8px;
   background-color: #E26A2C;
   margin: 4rem auto 0;
-  left: 711px;
+  left: 716px;
   top: 1333px;
   position: absolute;
 }
@@ -5722,23 +5763,44 @@ img {
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   padding: 12px 0;
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
 }
 
 .location-icon {
   width: 27px;
-  left: -94px;
-  top: -20px;
+  left: -82px;
+  top: -26px;
   position: relative;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .adventure-banner {
+    padding: 0;
+  }
   .adventure-banner-content {
     height: 19.375rem !important;
     margin: -20% 7% 0;
     width: 85% !important;
+    padding: 0;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .adventure-banner-content h1 {
+    font: normal normal 600 36px/45px Source Serif Pro;
+  }
+  .adventure-banner-content p {
+    font: normal normal 600 20px/24px Muli;
+  }
+  .adventure-banner-image {
+    padding: 0;
+  }
+  .adventure-banner-image img {
+    height: 12rem !important;
   }
   .adventure_heading {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -5768,9 +5830,8 @@ img {
 }
 
 .header-banner-content h1 {
-  font-size: 48px;
-  font-weight: normal;
-  font-family: Source Serif Pro;
+  text-align: center;
+  font: normal normal 600 48px/60px Source Serif Pro;
 }
 
 .bar {
@@ -5841,8 +5902,11 @@ img {
 }
 
 .product-details-bar {
-  font-size: 16px;
   margin-bottom: 2.5rem;
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
 }
 
 .product-details-bar > div:last-child {
@@ -5854,19 +5918,28 @@ select {
   width: 15.875rem;
   border-radius: 0.625rem;
   border-color: #B5B7BC;
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  color: #172026;
 }
 
 .product {
   text-align: left;
 }
 
-.product-info strong {
+.product-info {
+  letter-spacing: 0px;
   color: #172026;
+  text-align: left;
+}
+
+.product-info strong {
+  font: normal normal bold 18px/20px Muli;
 }
 
 .product-info p {
   margin: 0.313rem 0 1.094rem;
-  color: #172026;
+  font: normal normal 600 16px/20px Muli;
 }
 
 .product-container {
@@ -6115,6 +6188,14 @@ select {
   color: #172026;
 }
 
+.pagination ul li a :first-child {
+  display: none;
+}
+
+.pagination ul li a :last-child {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .product-content:not(:nth-child(1n)) {
     padding-right: 2rem;
@@ -6147,22 +6228,20 @@ select {
 
 .filter-content h5 {
   color: #172026;
-  font-size: 16px;
-  font-weight: 400;
+  text-align: left;
+  font: normal normal normal 15px/24px Muli;
 }
 
 .filter-content h6 {
   border-bottom: solid #D1D3D6;
   color: #181C24;
-  font-size: 20px;
-  font-weight: 400;
   margin: 2.25rem 0 1rem;
   padding-bottom: 1rem;
+  font: normal normal normal 20px/14px Muli;
 }
 
 .filter-category {
   border-bottom: solid #D1D3D6;
-  padding-bottom: 2rem;
 }
 
 .filter-category p {
@@ -6182,6 +6261,9 @@ select {
 
 .filter-category label {
   vertical-align: super;
+  font: normal normal normal 16px/22px Muli;
+  color: #181C24;
+  text-transform: capitalize;
 }
 
 .filter-category a {

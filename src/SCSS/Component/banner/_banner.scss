@@ -2,40 +2,46 @@
     background-color: $primary-grey-L1;
     text-align: left;
     padding: 4.5rem 0;
-    
+
     h1 {
-        // @extend .display-xl-48-dekstop-only ;
         font: normal normal 600 48px/60px Source Serif Pro;
         color: $color-grey-D2;
     }
-    p{
+
+    p {
         max-width: 552px;
         color: $dark-gunmetal-A1;
-        font-size: 16px;
         margin: 0.5rem 0 1.5rem;
+        font: normal normal normal 16px/24px Muli;
+        color: #172026;
     }
 }
 
 .Banner-content-img {
     width: auto;
-    padding-top :8rem;
+    padding-top: 8rem;
 }
-.btn_shop{
+
+.btn_shop {
     background-color: $primary-brand;
     color: $white;
     border: 1px solid $primary-brand;
     width: 221px;
     height: 40px;
 }
-@media (min-width: 320px) and (max-width: 768px){
-    .banner-content{
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .banner-content {
         text-align: center;
-        h1{
-            font-size: 36px;
+
+        h1 {
+            font: normal normal 600 36px/45px Source Serif Pro;
+            color: #1B252C;
         }
     }
 }
-@media (min-width: 769px) and (max-width: 1024px){
+
+@media (min-width: 769px) and (max-width: 1024px) {
     .banner-content {
         padding: 1.5rem 0;
     }

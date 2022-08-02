@@ -5,22 +5,20 @@
 
 .filter-content h5 {
     color: $color-grey-D2;
-    font-size: 16px;
-    font-weight: 400;
+    text-align: left;
+    font: normal normal normal 15px/24px Muli;
 }
 
 .filter-content h6 {
     border-bottom: solid $color-grey-N1;
     color: $color-grey-D3;
-    font-size: 20px;
-    font-weight: 400;
     margin: 2.25rem 0 1rem;
     padding-bottom: 1rem;
+    font: normal normal normal 20px/14px Muli;
 }
 
 .filter-category {
     border-bottom: solid $color-grey-N1;
-    padding-bottom: 2rem;
 
     p {
         font-size: 16px;
@@ -39,6 +37,9 @@
 
     label {
         vertical-align: super;
+        font: normal normal normal 16px/22px Muli;
+        color: #181C24;
+        text-transform: capitalize;
     }
 
     a {

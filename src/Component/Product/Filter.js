@@ -4,20 +4,6 @@ import { useState,useEffect } from 'react';
 export default function Filter({ filterProduct }) {
   const [data, setData] = useState([]);
   const [isSelected, setisSelected] = useState(false);
-
-  // const fetchData = () => {
-  //   fetch("https://fakestoreapi.com/products/categories")
-  //     .then(response => {
-  //       return response.json();
-  //     })
-  //     .then(data => {
-  //       setData(data);
-  //     })
-  //   console.log(data)
-  // }
-  // useEffect(() => {
-  //   fetchData()
-  // }, [])
   const getCategoryData = () => {
     fetch("https://fakestoreapi.com/products/categories")
         .then(res => {
@@ -49,7 +35,7 @@ useEffect(() => {
                   setisSelected(!isSelected);
                   filterProduct({ category })
                 }} />
-                <label htmlFor="chk1-label"> {category}</label><br />
+                <label htmlFor="chk1-label">{category}</label><br />
 
               </div>
 

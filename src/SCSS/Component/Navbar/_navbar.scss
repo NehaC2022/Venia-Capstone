@@ -12,6 +12,7 @@
         li{
             padding-right: 2rem;
             color : $white;
+            font: normal normal 600 16px/24px Muli;
         }
     }
     .icon{
@@ -19,6 +20,18 @@
     }
     .cart-icon{
         color: $white;
+        span{
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            top: 8px;
+            right: 106px;
+            width: 20px;
+            height: 20px;
+            color:$white;
+            background: #FDA65D;
+            border-radius: 50%;
+        }
     }
     img{
         width: auto;
