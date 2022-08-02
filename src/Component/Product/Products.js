@@ -62,20 +62,6 @@ const Products = ({data, products,loading,sortProduct}) => {
       {
         loading ? <h1 style={{ fontSize: "62px" }}>Loading...</h1> :
           <>
-            {/* <div className='Attribute-first'>
-              <h4>Categories</h4>
-              <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={()=>{ setisSelected(!isSelected);
-        filterProduct("jewelery");}} />
-              <label htmlFor="chk1-label"> Jewellery</label><br />
-              <input type="checkbox" aria-label="checkbox" onClick={() => filterProduct("electronics")} />
-              <label >  Electronics</label><br />
-              <input type="checkbox" aria-label="checkbox" onClick={() => filterProduct("men's clothing")} />
-              <label >  Men’s Clothing</label><br />
-              <input type="checkbox" aria-label="checkbox" onClick={() => filterProduct("women's clothing")} />
-              <label >Women’s Clothing</label><br />
-
-            </div> */}
-
             <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 body-container product-details-bar'>
               <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
                 <p>{data.length}Results</p>

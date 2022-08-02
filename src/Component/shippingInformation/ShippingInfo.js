@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Button from '../Button'
+import { Accordian } from '../Accordian';
 import { NavLink } from "react-router-dom";
 
-export default function ShippingInfo() {
+export default function ShippingInfo({shippingInfoAccor}) {
     const [formData, setFormData] = useState({
         email: " ",
         phoneNumber: " ",
@@ -23,6 +24,7 @@ export default function ShippingInfo() {
         e.preventDefault();
         alert("form save succesfully");
         window.localStorage.setItem("formData", JSON.stringify(formData));
+        shippingInfoAccor();
         setFormData({
             email: " ",
             phoneNumber: " ",
@@ -36,17 +38,17 @@ export default function ShippingInfo() {
         console.log(formData);
     }
     return (
-        <>
+        <> 
             <div className='checkout-contactInfo'>
                 <h5>Contact information</h5>
                 <p>We’ll use these details to keep you informed on your delivery.</p>
                 <form className="aem-Grid aem-Grid--12 contact_form">
                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
-                        <label for="Email">Email</label><br />
+                        <label htmlFor="Email">Email</label><br />
                         <input type="text" id="email" name="email" value={formData.email} onChange={inputData} />
                     </div>
                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
-                        <label for="number">Phone Number</label><br />
+                        <label htmlFor="number">Phone Number</label><br />
                         <input type="text" id="phoneNumber" name="phoneNumber" value={formData.phoneNumber} onChange={inputData} />
                     </div>
                 </form>
@@ -66,27 +68,27 @@ export default function ShippingInfo() {
                     </div>
                     <div className="aem-Grid aem-Grid--12 ">
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
-                            <label for="firstName" className='label-form'>First Name</label><br />
+                            <label htmlFor="firstName" className='label-form'>First Name</label><br />
                             <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={inputData} />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
-                            <label for="lastName" className='label-form'>Last Name</label><br />
+                            <label htmlFor="lastName" className='label-form'>Last Name</label><br />
                             <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={inputData} />
                         </div>
                     </div>
                     <div className="aem-Grid aem-Grid--12 ">
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
-                            <label for="address1" className='label-form'>Street Address</label><br />
+                            <label htmlFor="address1" className='label-form'>Street Address</label><br />
                             <input type="text" id="address1" name="address1" value={formData.address1} onChange={inputData} />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
-                            <label for="address2" className='label-form'>Street Address 2</label><br />
+                            <label htmlFor="address2" className='label-form'>Street Address 2</label><br />
                             <input type="text" id="address2" name="address2" value={formData.address2} onChange={inputData} />
                         </div>
                     </div>
                     <div className="aem-Grid aem-Grid--12 ">
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
-                            <label for="city" className='label-form'>City</label><br />
+                            <label htmlFor="city" className='label-form'>City</label><br />
                             <input type="text" id="C\city" name="city" value={formData.city} onChange={inputData} />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 " style={{ paddingRight: "16px" }}>
@@ -99,7 +101,7 @@ export default function ShippingInfo() {
                             </label>
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
-                            <label for="zip" className='label-form'>ZIP</label><br />
+                            <label htmlFor="zip" className='label-form'>ZIP</label><br />
                             <input type="text" id="zip" name="zip" placeholder="91001" className='zip' value={formData.zip} onChange={inputData} />
                         </div>
                     </div>
@@ -109,6 +111,8 @@ export default function ShippingInfo() {
                     </div>
                     </NavLink>
                 </form>
+                <Accordian text="2. Shipping Method" className="accordian-content"/>
+                <Accordian text="3. Payment Information" className="accordian-content mr-bottom"/>
             </div>
         </>
     )

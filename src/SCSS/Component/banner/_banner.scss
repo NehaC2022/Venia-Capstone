@@ -2,13 +2,11 @@
     background-color: $primary-grey-L1;
     text-align: left;
     padding: 4.5rem 0;
-
+    
     h1 {
-        @extend .display-xl-48-dekstop-only ;
-        // color: $dark-gunmetal-A1;
-        // font-size: 47px;
-        // font-weight: 600;
-        // max-width: 442px;
+        // @extend .display-xl-48-dekstop-only ;
+        font: normal normal 600 48px/60px Source Serif Pro;
+        color: $color-grey-D2;
     }
     p{
         max-width: 552px;

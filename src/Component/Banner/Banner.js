@@ -11,7 +11,7 @@ export default function Banner() {
                             <img src={require('../../images/chevron-left.svg').default} alt='left-arrow' aria-label='left-arrow' className='Banner-content-img' />
                         </div>
                         <div className='aem-GridColumn aem-GridColumn--default--11 '>
-                            <h1>Shop the new Signature Collection</h1>
+                            <h1>Shop the new <br/>Signature Collection</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
                             <NavLink to="/producthome"><Button className="btn_shop" text="SHOP NOW" /></NavLink>
                         </div>

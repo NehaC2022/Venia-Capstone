@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function PaymentInfoDetails() {
+    const paymentInfo = JSON.parse(window.localStorage.getItem("paymentData"));
+    console.log( paymentInfo);
 
     return (
         <div className='payment-info-content'>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ShippingInfo from '../shippingInformation/ShippingInfo';
 import PricingSummary from '../PricingSummary/PricingSummary';
 import SighInExpressCheckout from '../SignInExpressCheckout/SighInExpressCheckout';
@@ -8,6 +8,26 @@ import PlaceOrder from '../PlaceOrder/PlaceOrder';
 
 
 export default function Checkout() {
+    const [isShippingInfoActive, setIsShippingInfoActive]= useState(true);
+    const [isShippingMethodActive, setIsShippingMethodActive]= useState(false); 
+    const [isPaymentActive, setIsPaymentActive]= useState(false); 
+    const [orderDetails, setOrderDetails] =useState(false);
+    // const [isSignInCheckout, setIsignInCheckout] =useState(true);
+    const shippingInfoAccor=()=>{
+        setIsShippingInfoActive(!isShippingInfoActive);
+        setIsShippingMethodActive(!isShippingMethodActive);
+    }
+    const shippingMethodAccor=()=>{
+        setIsShippingMethodActive(!isShippingMethodActive);
+        setIsPaymentActive(!isPaymentActive);
+    }
+    const paymentAccor=()=>{
+        setIsPaymentActive(!isPaymentActive);
+        setOrderDetails(!orderDetails)
+    }
+    // const signInCheckout=()=>{
+    //     setIsignInCheckout(!isSignInCheckout)
+    // }
     return (
         <section className='aem-Grid aem-Grid--12 container checkout'>
             <div className='aem-Grid aem-Grid--12 checkout-header'>
@@ -17,10 +37,10 @@ export default function Checkout() {
             <div className='aem-Grid aem-Grid--12'>
                 <h2>Guest Checkout</h2>
                 <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 checkout-form-content'>
-                    <ShippingInfo/>
-                    <ShippingMethod/>
-                    <PaymentInfo/>
-                    <PlaceOrder/>
+                    {isShippingInfoActive &&  <ShippingInfo shippingInfoAccor={shippingInfoAccor}/>}
+                    {isShippingMethodActive && <ShippingMethod shippingMethodAccor={shippingMethodAccor}/>}
+                    {isPaymentActive && <PaymentInfo paymentAccor={paymentAccor}/>}
+                    {orderDetails && <PlaceOrder/>}
                 </div>
                 <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12'>
                     <SighInExpressCheckout/>

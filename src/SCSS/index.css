@@ -5219,7 +5219,7 @@ img {
 }
 
 /* Character Styles */
-.display-xl-48-dekstop-only, .banner-content h1 {
+.display-xl-48-dekstop-only {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5424,6 +5424,11 @@ img {
   background-color: #E5E5E7;
   text-align: left;
   padding: 4.5rem 0;
+}
+
+.banner-content h1 {
+  font: normal normal 600 48px/60px Source Serif Pro;
+  color: #172026;
 }
 
 .banner-content p {
@@ -6545,6 +6550,19 @@ select {
   border-radius: 8px;
 }
 
+.accordian-content {
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #72777F;
+  border-bottom: 1px solid #E5E5E7;
+  border-top: 1px solid #E5E5E7;
+  padding: 1.5rem 0;
+}
+
+.mr-bottom {
+  margin-bottom: 128px;
+}
+
 .signIn_container {
   background: var(--white) 0% 0% no-repeat padding-box;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -6595,7 +6613,7 @@ select {
   font: normal normal bold 16px/24px Muli;
 }
 
-.shipping-content {
+.shipping-info-content {
   color: #172026;
   letter-spacing: 0px;
   border: 1px solid #D1D3D6;
@@ -6603,27 +6621,27 @@ select {
   padding: 24px 24px 32px;
 }
 
-.shipping-content h6 {
+.shipping-info-content h6 {
   text-align: left;
   font: normal normal 600 16px/20px Muli;
   letter-spacing: 0px;
 }
 
-.shipping-content .edit-icon {
+.shipping-info-content .edit-icon {
   text-align: right;
 }
 
-.shipping-content .edit-icon p {
+.shipping-info-content .edit-icon p {
   display: inline;
   font: normal normal 600 16px/22px Muli;
   color: #E26A2C;
 }
 
-.shipping-content .edit-icon img {
+.shipping-info-content .edit-icon img {
   vertical-align: bottom;
 }
 
-.shipping-content .shipping-content-data {
+.shipping-info-content .shipping-content-data {
   margin-top: 1rem;
   font: normal normal normal 16px/24px Muli;
   color: #535965;
@@ -6676,7 +6694,7 @@ select {
   margin: 42px 0 48px;
 }
 
-.shipping-method-content {
+.shipping-method-info-content {
   color: #172026;
   letter-spacing: 0px;
   border: 1px solid #D1D3D6;
@@ -6684,27 +6702,27 @@ select {
   padding: 24px 24px 32px;
 }
 
-.shipping-method-content h6 {
+.shipping-method-info-content h6 {
   text-align: left;
   font: normal normal 600 16px/20px Muli;
   letter-spacing: 0px;
 }
 
-.shipping-method-content .edit-icon {
+.shipping-method-info-content .edit-icon {
   text-align: right;
 }
 
-.shipping-method-content .edit-icon p {
+.shipping-method-info-content .edit-icon p {
   display: inline;
   font: normal normal 600 16px/22px Muli;
   color: #E26A2C;
 }
 
-.shipping-method-content .edit-icon img {
+.shipping-method-info-content .edit-icon img {
   vertical-align: bottom;
 }
 
-.shipping-method-content .shipping-method-data {
+.shipping-method-info-content .shipping-method-data {
   margin-top: 1rem;
   font: normal normal normal 16px/24px Muli;
   color: #535965;
