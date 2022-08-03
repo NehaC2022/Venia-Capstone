@@ -63,15 +63,22 @@
     .desktop-logo{
         padding-left: 5rem;
     }
+    .navbar .cart-icon span{
+        right: 4px;
+    }
 }
-@media (min-width: 769px) and (max-width: 1023px){
+@media (min-width: 769px) and (max-width: 1024px){
     .mobile-menu{
         display: none;
     }
 }
-@media (min-width: 1024px) and (max-width: 1920px){
+@media (min-width: 1025px) and (max-width: 1440px){
     .mobile-menu{
         display: none;
-    }    
+    }  
+    // .navbar .cart-icon span{
+    //     right: 48px;
+    // }  
 }
+
 

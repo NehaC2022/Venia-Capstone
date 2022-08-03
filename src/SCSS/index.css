@@ -5420,15 +5420,18 @@ img {
   .desktop-logo {
     padding-left: 5rem;
   }
+  .navbar .cart-icon span {
+    right: 4px;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .mobile-menu {
     display: none;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1920px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   .mobile-menu {
     display: none;
   }
@@ -5698,7 +5701,10 @@ img {
     font: normal normal 600 36px/45px Source Serif Pro;
   }
   .signature-banner-content .btn_collection {
-    margin: 24px 0 0;
+    margin: 24px 0;
+  }
+  .border-div {
+    margin: 2rem auto 0;
   }
 }
 
@@ -5793,6 +5799,10 @@ img {
   .adventure-banner-content p {
     font: normal normal 600 20px/24px Muli;
   }
+  .adventure-banner-content .bar {
+    left: 10px;
+    top: 2541px;
+  }
   .adventure-banner-image {
     padding: 0;
   }
@@ -5801,6 +5811,10 @@ img {
   }
   .adventure_heading {
     display: none;
+  }
+  .location-icon {
+    left: 22px;
+    top: -243px;
   }
 }
 
@@ -5886,8 +5900,9 @@ img {
 }
 
 .product-content {
-  height: 26rem;
+  height: 416px;
   color: #172026;
+  width: 113px;
 }
 
 .product-content:not(:nth-child(3n)) {
@@ -5945,11 +5960,23 @@ select {
 .product-container {
   padding: 0 15px;
   margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.mini-image {
+  height: 120px !important;
+  width: 100px !important;
 }
 
 .mini-image img {
   width: auto;
   height: 120px;
+}
+
+.large-image {
+  width: 387px !important;
+  height: 600px !important;
+  margin-left: 3rem;
 }
 
 .large-image img {
@@ -5960,30 +5987,26 @@ select {
 .product-details {
   text-align: left;
   color: #172026;
+  letter-spacing: 0px;
 }
 
 .product-details h1 {
-  font-size: 36px;
-  font-weight: 600;
-  font-family: 'Mulish', sans-serif;
-  font-family: 'Source Serif Pro', serif;
   padding: 1.25rem 0 0.5rem;
+  font: normal normal 600 36px/45px Source Serif Pro;
 }
 
 .product-details h4 {
-  font-size: 20px;
-  font-weight: 600;
   padding: 0.5rem 0 1rem;
+  font: normal normal 600 20px/30px Muli;
 }
 
 .product-details h5 {
-  font-size: 20px;
-  font-weight: 600;
+  font: normal normal 600 20px/30px Muli;
   padding: 1rem 0rem;
 }
 
 .product-details h6 {
-  font-size: 14px;
+  font: normal normal normal 14px/20px Muli;
 }
 
 .product-details p {
@@ -6029,12 +6052,16 @@ select {
   border-width: 2px;
 }
 
+.description p {
+  font: normal normal normal 16px/24px Muli;
+}
+
 .description .read_more {
   border: none;
   background: transparent;
-  font-size: 15px;
-  font-weight: 600;
-  border-bottom: 1px solid #172026;
+  text-decoration: underline;
+  font: normal normal 600 16px/24px Muli;
+  color: #172026;
 }
 
 .stars-outer {
@@ -6094,14 +6121,16 @@ select {
   margin-bottom: 1.5rem;
 }
 
-.cart {
+.add-to-cart {
   background-color: #E26A2C;
   width: auto;
   padding: 0.688rem 6.938rem;
-  border-radius: 28px;
   color: #FFFFFF;
   margin: 0 0 24px;
   border: none;
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
+  text-transform: uppercase;
 }
 
 .social-icon p {
@@ -6121,23 +6150,21 @@ select {
 }
 
 .product-description h1 {
-  font-size: 36px;
-  font-weight: 600;
-  font-family: 'Mulish', sans-serif;
-  font-family: 'Source Serif Pro', serif;
+  font: normal normal 600 36px/45px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #172026;
 }
 
 .product-description h3 {
-  font-size: 20px;
-  padding: 1rem 0 1rem;
-  font-weight: 600;
+  padding: 1.5rem 0 1rem;
+  font: normal normal 600 20px/25px Muli;
 }
 
 .product-description p {
-  font-size: 16px;
   display: inline;
   margin-bottom: 1rem;
   vertical-align: super;
+  font: normal normal normal 16px/24px Muli;
 }
 
 .product-description img {
@@ -6196,6 +6223,15 @@ select {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .large-image-carousel {
+    display: none;
+  }
+  .large-image-carousel img {
+    width: 100%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .product-content:not(:nth-child(1n)) {
     padding-right: 2rem;
@@ -6214,6 +6250,12 @@ select {
   }
   .large-image img {
     padding-right: 0;
+  }
+  .large-image {
+    display: none;
+  }
+  .large-image-carousel {
+    display: block;
   }
 }
 
@@ -6313,12 +6355,11 @@ select {
 
 .shopping-cart {
   color: #172026;
+  margin-top: 2rem;
 }
 
 .shopping-cart h1 {
-  font-family: 'Mulish', sans-serif;
-  font-family: 'Source Serif Pro', serif;
-  font-size: 48px;
+  font: normal normal 600 48px/45px Source Serif Pro;
 }
 
 .shopping-cart .underbar {
@@ -6354,13 +6395,17 @@ select {
 .shopping-cart ul li {
   list-style: none;
   text-align: left;
-  margin-bottom: 0.5rem;
-  font-size: 12px;
+  margin-bottom: 1rem;
+  font: normal normal 600 12px/14px Muli;
 }
 
 .shopping-cart ul img {
   padding-right: 0.5rem;
   vertical-align: middle;
+}
+
+.shopping-cart ul button {
+  font: normal normal 600 12px/14px Muli;
 }
 
 .cart-info > div {
@@ -6377,13 +6422,11 @@ select {
 }
 
 .cart-product h6 {
-  font-size: 20px;
-  font-weight: 600;
+  font: normal normal 600 20px/25px Muli;
 }
 
 .cart-product p {
-  font-size: 16px;
-  font-weight: 400;
+  font: normal normal normal 16px/24px Muli;
 }
 
 .cart-icon button {
@@ -6398,35 +6441,48 @@ select {
 
 .pricing-summary p {
   text-align: left;
+  font: normal normal normal 16px/24px Muli;
 }
 
 .pricing-summary span {
   float: right;
+  font: normal normal normal 16px/24px Muli;
 }
 
 .pricing-summary h5 {
-  font-size: 20px;
+  font: normal normal 600 20px/25px Muli;
   margin-bottom: 1.5rem;
 }
 
 .pricing-summary h6 {
-  font-size: 16px;
-  font-weight: 700;
   margin: 1rem 0 2.5rem;
+  font: normal normal bold 16px/24px Muli;
+  text-align: left;
+}
+
+.pricing-summary h6 span {
+  float: right;
+  font: normal normal bold 16px/24px Muli;
 }
 
 .pricing-summary button {
-  padding: 0.688rem 4.375rem;
-  border-radius: 1.75rem;
+  padding: 0.688rem 4.563rem;
   color: #FFFFFF;
   background-color: #E26A2C;
   border: none;
-  margin: 0 1.625rem;
+}
+
+.pricing-summary .pp-button {
+  text-align: center;
 }
 
 .pricing-summary .pp-button img {
   width: 77%;
   margin-top: 1.5rem;
+}
+
+.pricing-summary .checkBtn {
+  font: normal normal bold 14px/16px Muli;
 }
 
 .pricing-summary .checkBtn img {
@@ -6436,6 +6492,14 @@ select {
 
 .primary-info {
   margin: 2.5rem 0 4rem;
+}
+
+.primary-info button {
+  font: normal normal normal 20px/25px Muli;
+}
+
+.primary-info span {
+  font: normal normal normal 14px/21px Muli;
 }
 
 .accordion {
@@ -6476,6 +6540,10 @@ select {
   .pricing-summary button {
     padding: 0.688rem 2.375rem;
     margin: 0;
+  }
+  .pricing-summary {
+    border: none;
+    padding: 0;
   }
 }
 
@@ -6645,6 +6713,36 @@ select {
   margin-bottom: 128px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact_form div {
+    padding: 0px !important;
+  }
+  .mob-shipping-button {
+    border: 2px solid #D4703D;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: #D4703D;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 11px 69px;
+    text-transform: uppercase;
+    display: block;
+  }
+  .shipping-button {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mob-shipping-button {
+    display: none;
+  }
+  .shipping-button {
+    display: block;
+  }
+}
+
 .signIn_container {
   background: var(--white) 0% 0% no-repeat padding-box;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -6667,6 +6765,12 @@ select {
   border: 2px solid #D4703D;
   padding: 11px 49px;
   color: #D4703D;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .signIn_container {
+    display: none;
+  }
 }
 
 .price-calculation {

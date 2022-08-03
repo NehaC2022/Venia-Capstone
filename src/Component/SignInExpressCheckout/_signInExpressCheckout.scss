@@ -21,3 +21,8 @@
         color: #D4703D;
     }
 }
+@media (min-width : 320px) and (max-width : 767px){
+    .signIn_container{
+        display: none;
+    }
+}

@@ -22,7 +22,6 @@ export default function ShippingInfo({shippingInfoAccor}) {
     }
     const submitAction = (e) => {
         e.preventDefault();
-        alert("form save succesfully");
         window.localStorage.setItem("formData", JSON.stringify(formData));
         shippingInfoAccor();
         setFormData({
@@ -43,11 +42,11 @@ export default function ShippingInfo({shippingInfoAccor}) {
                 <h5>Contact information</h5>
                 <p>We’ll use these details to keep you informed on your delivery.</p>
                 <form className="aem-Grid aem-Grid--12 contact_form">
-                    <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
+                    <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
                         <label htmlFor="Email">Email</label><br />
                         <input type="text" id="email" name="email" value={formData.email} onChange={inputData} />
                     </div>
-                    <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
+                    <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
                         <label htmlFor="number">Phone Number</label><br />
                         <input type="text" id="phoneNumber" name="phoneNumber" value={formData.phoneNumber} onChange={inputData} />
                     </div>
@@ -57,7 +56,7 @@ export default function ShippingInfo({shippingInfoAccor}) {
                 <h5>1. Shipping Information</h5>
                 <form className="shipping-content">
                     <div className="aem-Grid aem-Grid--12 ">
-                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
                             <label>Country<br />
                                 <select name="country" id="country" aria-label="Selectcountry">
                                     <option value="united state">United States</option>
@@ -67,31 +66,31 @@ export default function ShippingInfo({shippingInfoAccor}) {
                         </div>
                     </div>
                     <div className="aem-Grid aem-Grid--12 ">
-                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
                             <label htmlFor="firstName" className='label-form'>First Name</label><br />
                             <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={inputData} />
                         </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
                             <label htmlFor="lastName" className='label-form'>Last Name</label><br />
                             <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={inputData} />
                         </div>
                     </div>
                     <div className="aem-Grid aem-Grid--12 ">
-                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
                             <label htmlFor="address1" className='label-form'>Street Address</label><br />
                             <input type="text" id="address1" name="address1" value={formData.address1} onChange={inputData} />
                         </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
                             <label htmlFor="address2" className='label-form'>Street Address 2</label><br />
                             <input type="text" id="address2" name="address2" value={formData.address2} onChange={inputData} />
                         </div>
                     </div>
                     <div className="aem-Grid aem-Grid--12 ">
-                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
                             <label htmlFor="city" className='label-form'>City</label><br />
                             <input type="text" id="C\city" name="city" value={formData.city} onChange={inputData} />
                         </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 " style={{ paddingRight: "16px" }}>
+                        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--12 " style={{ paddingRight: "16px" }}>
                             <label>State<br />
                                 <select className="state-select" aria-label="selectstate">
                                     <option value="DEFAULT">California</option>
@@ -100,7 +99,7 @@ export default function ShippingInfo({shippingInfoAccor}) {
                                 </select>
                             </label>
                         </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
+                        <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--2 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
                             <label htmlFor="zip" className='label-form'>ZIP</label><br />
                             <input type="text" id="zip" name="zip" placeholder="91001" className='zip' value={formData.zip} onChange={inputData} />
                         </div>
@@ -108,6 +107,7 @@ export default function ShippingInfo({shippingInfoAccor}) {
                     <NavLink to='/shippingMethod'>
                     <div className="shipping-method">
                         <Button text="CONTINUE TO SHIPPING METHOD" className="shipping-button" onClick={submitAction} />
+                        <Button text="CONTINUE" className="mob-shipping-button" onClick={submitAction} />
                     </div>
                     </NavLink>
                 </form>

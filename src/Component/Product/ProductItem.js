@@ -1,31 +1,29 @@
-import React ,{useState}from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import ProductDescription from './ProductDescription';
 import Rating from './Rating';
 import { handleAction } from '../../redux/cartSlice';
 import SimpleImageSlider from "react-simple-image-slider";
 
-export default function ProductItem({ title, price, img, description, product,rating }) {
+export default function ProductItem({ title, price, img, description, product, rating }) {
     const dispatch = useDispatch();
     const addProduct = (product) => {
         dispatch(handleAction.addItem({ ...product }))
         console.log(product);
     }
-    let [num, setNum]= useState(0);
-    let incNum =()=>{
-      if(num<10)
-      {
-      setNum(Number(num)+1);
-      }
+    let [num, setNum] = useState(0);
+    let incNum = () => {
+        if (num < 10) {
+            setNum(Number(num) + 1);
+        }
     };
     let decNum = () => {
-       if(num>0)
-       {
-        setNum(num - 1);
-       }
+        if (num > 0) {
+            setNum(num - 1);
+        }
     }
-   let handleChange = (e)=>{
-     setNum(e.target.value);
+    let handleChange = (e) => {
+        setNum(e.target.value);
     }
     const images = [
         { url: img },
@@ -33,8 +31,8 @@ export default function ProductItem({ title, price, img, description, product,ra
         { url: img },
         { url: img },
         { url: img }
-    
-      ];
+
+    ];
     return (
         <div>
             <div className='aem-Grid aem-Grid--12 product-container'>
@@ -42,26 +40,26 @@ export default function ProductItem({ title, price, img, description, product,ra
                     <div className='aem-Grid aem-Grid--12 product-item' >
                         <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--hide aem-GridColumn--tablet--hide mini-image'>
                             <figure>
-                                <img src={img} alt='ProductImage' aria-label='product-icon'/>
-                                <img src={img} alt='ProductImage' aria-label='product-icon'/>
-                                <img src={img} alt='ProductImage' aria-label='product-icon'/>
-                                <img src={img} alt='ProductImage' aria-label='product-icon'/>
-                                <img src={img} alt='ProductImage' aria-label='product-icon'/>
+                                <img src={img} alt='ProductImage' aria-label='product-icon' />
+                                <img src={img} alt='ProductImage' aria-label='product-icon' />
+                                <img src={img} alt='ProductImage' aria-label='product-icon' />
+                                <img src={img} alt='ProductImage' aria-label='product-icon' />
+                                <img src={img} alt='ProductImage' aria-label='product-icon' />
                             </figure>
                         </div>
-                        {/* <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 large-image'>
+                        <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 large-image'>
                             <figure>
                                 <img src={img} alt='ProductImage' aria-label='product-icon'/>
                             </figure>
-                        </div> */}
-                        <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 large-image'>
-                        <SimpleImageSlider
-                            width={400}
-                            height={550}
-                            images={images}
-                            showBullets={true}
-                            showNavs={true}
-                          />
+                        </div>
+                        <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 large-image-carousel'>
+                            <SimpleImageSlider
+                                width={400}
+                                height={550}
+                                images={images}
+                                showBullets={true}
+                                showNavs={true}
+                            />
                         </div>
                     </div>
                 </div>
@@ -77,20 +75,20 @@ export default function ProductItem({ title, price, img, description, product,ra
                         <img src={require("../../images/star.svg").default} alt="StarImage" aria-label='star-icon'/>
                     </div> */}
                     {/* <Rating rating={rating}/> */}
-                    <ProductDescription description={description}/>
+                    <ProductDescription description={description} />
                     <div className='product-btn'>
                         <h5>Quantity</h5>
                         <div className='cart-btn'>
                             <button aria-label='decrement-button' onClick={decNum}>-</button>
-                            <input type="text" value={num} onChange={handleChange}/>
+                            <input type="text" value={num} onChange={handleChange} />
                             <button aria-label='decrement-button' onClick={incNum}>+</button>
                         </div>
                     </div>
-                    <button className='cart' onClick={() => addProduct(product)}>ADD TO CART</button>
+                    <button className='add-to-cart' onClick={() => addProduct(product)}>ADD TO CART</button>
                     <div className='social-icon'>
-                        <img src={require("../../images/heart.svg").default} alt="HeartImage" aria-label='HeartIcon'/>
+                        <img src={require("../../images/heart.svg").default} alt="HeartImage" aria-label='HeartIcon' />
                         <p>Save</p>
-                        <img src={require("../../images/share.svg").default} alt="ShareImage" aria-label='shareIcon'/>
+                        <img src={require("../../images/share.svg").default} alt="ShareImage" aria-label='shareIcon' />
                         <p>Share</p>
                     </div>
                 </div>

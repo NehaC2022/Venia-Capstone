@@ -15,8 +15,9 @@
 }
 
 .product-content {
-    height: 26rem;
+    height: 416px;
     color: $color-grey-D2;
+    width: 113px;
 
 
     &:not(:nth-child(3n)) {
@@ -61,6 +62,7 @@ select {
     letter-spacing: 0px;
     color: $dark-gunmetal-A1;
     text-align: left;
+
     strong {
         font: normal normal bold 18px/20px Muli;
     }
@@ -74,44 +76,52 @@ select {
 .product-container {
     padding: 0 15px;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
-.mini-image img {
-    width: auto;
-    height: 120px;
+.mini-image {
+    height: 120px !important;
+    width: 100px !important;
+
+    img {
+        width: auto;
+        height: 120px;
+    }
 }
 
-.large-image img {
-    width: 100%;
-    padding-right: 1.5rem;
+.large-image {
+    width: 387px !important;
+    height: 600px !important;
+    margin-left: 3rem;
+
+    img {
+        width: 100%;
+        padding-right: 1.5rem;
+    }
 }
 
 .product-details {
     text-align: left;
     color: $color-grey-D2;
+    letter-spacing: 0px;
 
     h1 {
-        font-size: 36px;
-        font-weight: 600;
-        font-family: 'Mulish', sans-serif;
-        font-family: 'Source Serif Pro', serif;
         padding: 1.25rem 0 0.5rem;
+        font: normal normal 600 36px/45px Source Serif Pro;
     }
 
     h4 {
-        font-size: 20px;
-        font-weight: 600;
         padding: 0.5rem 0 1rem;
+        font: normal normal 600 20px/30px Muli;
     }
 
     h5 {
-        font-size: 20px;
-        font-weight: 600;
+        font: normal normal 600 20px/30px Muli;
         padding: 1rem 0rem;
     }
 
     h6 {
-        font-size: 14px;
+        font: normal normal normal 14px/20px Muli;
     }
 
     p {
@@ -157,12 +167,16 @@ select {
     border-bottom: solid $color-grey-N1;
     border-width: 2px;
 
+    p {
+        font: normal normal normal 16px/24px Muli;
+    }
+
     .read_more {
         border: none;
         background: transparent;
-        font-size: 15px;
-        font-weight: 600;
-        border-bottom: 1px solid $dark-gunmetal-A1;
+        text-decoration: underline;
+        font: normal normal 600 16px/24px Muli;
+        color: $dark-gunmetal-A1;
     }
 }
 
@@ -225,14 +239,16 @@ select {
     margin-bottom: 1.5rem;
 }
 
-.cart {
+.add-to-cart {
     background-color: $primary-brand;
     width: auto;
     padding: 0.688rem 6.938rem;
-    border-radius: 28px;
     color: $color-white;
     margin: 0 0 24px;
     border: none;
+    text-align: center;
+    font: normal normal bold 14px/16px Muli;
+    text-transform: uppercase;
 }
 
 .social-icon {
@@ -253,23 +269,22 @@ select {
     color: $color-grey-D2;
 
     h1 {
-        font-size: 36px;
-        font-weight: 600;
-        font-family: 'Mulish', sans-serif;
-        font-family: 'Source Serif Pro', serif;
+
+        font: normal normal 600 36px/45px Source Serif Pro;
+        letter-spacing: 0px;
+        color: #172026;
     }
 
     h3 {
-        font-size: 20px;
-        padding: 1rem 0 1rem;
-        font-weight: 600;
+        padding: 1.5rem 0 1rem;
+        font: normal normal 600 20px/25px Muli;
     }
 
     p {
-        font-size: 16px;
         display: inline;
         margin-bottom: 1rem;
         vertical-align: super;
+        font: normal normal normal 16px/24px Muli;
     }
 
     img {
@@ -318,12 +333,25 @@ select {
         }
     }
 }
-.pagination ul li a :first-child{
+
+.pagination ul li a :first-child {
     display: none;
 }
-.pagination ul li a :last-child{
+
+.pagination ul li a :last-child {
     display: none;
 }
+
+@media (min-width: 768px) {
+    .large-image-carousel {
+        display: none;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
     .product-content {
         &:not(:nth-child(1n)) {
@@ -352,6 +380,14 @@ select {
 
     .large-image img {
         padding-right: 0;
+    }
+
+    .large-image {
+        display: none;
+    }
+
+    .large-image-carousel {
+        display: block;
     }
 
 }

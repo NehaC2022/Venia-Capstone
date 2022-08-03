@@ -14,7 +14,7 @@ export default function ShoppingCart() {
     }, [productCart, dispatch]);
     return (
         <section className='container'>
-            <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 shopping-cart container'>
+            <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 shopping-cart'>
                 <div>
                     <h1>Your Shopping Bag</h1>
                     <button className='underbar' aria-label="underbarButton"></button>
@@ -24,7 +24,6 @@ export default function ShoppingCart() {
                         {cartData.map((value) => {
                             return (
                                 <>
-
                                     <div className='aem-Grid aem-Grid--12'>
                                         <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
                                             <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 cart-product'>
@@ -42,7 +41,7 @@ export default function ShoppingCart() {
                                         <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12  '>
                                             <div className='cart-btn'>
                                                 <button aria-label="decrement-Button" onClick={() => { return dispatch(handleAction.decrementQnt(value)) }}>-</button>
-                                                <input type="text" value={value.quantity} className='cart-input' />
+                                                <input type="text" defaultValue={value.quantity} className='cart-input' />
                                                 <button aria-label="Increment-Button" onClick={() => { return dispatch(handleAction.incrementQnt(value)) }}>+</button>
 
                                             </div>

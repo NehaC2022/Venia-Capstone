@@ -7,7 +7,6 @@ export default function ShippingMethod({shippingMethodAccor}) {
     const [shippingData, setShippingData] = useState();
     const Radiohandal = (e) => {
         e.preventDefault();
-        alert("form save succesfully");
         window.localStorage.setItem("shippingData", JSON.stringify(shippingData));
         shippingMethodAccor();
         console.log(shippingData);

@@ -18,7 +18,6 @@ const paymentinputData = (e) => {
 }
 const submitAction = (e) => {
   e.preventDefault();
-  alert("form save succesfully");
   window.localStorage.setItem("paymentData", JSON.stringify(paymentData));
   paymentAccor();
   setPaymentData({
@@ -38,7 +37,7 @@ const submitAction = (e) => {
         <h5>3. Payment Information</h5>
         <form>
           <div className="radio-button">
-            <input type="radio" name="paymentway" id="credit-card" value={paymentData.paymentway} onChange={paymentinputData}/>
+            <input type="radio" name="paymentway" id="credit-card" value={paymentData.paymentway} onChange={paymentinputData} />
             <label htmlFor="creditcard">Credit Card</label>
           </div>
           <div className='aem-Grid aem-Grid--12'>

@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import {toast} from "react-toastify"
 
 export const cartSlice = createSlice({
   name: 'cart',
@@ -20,7 +21,8 @@ export const cartSlice = createSlice({
       } else {
         const prod = {...action.payload, quantity: 1 }
         state.item.push(prod);
-        alert(`${prod.title} has been successfully added to your cart`);
+        toast.success("Product added to cart", {
+          position: "top-center",})
       }
       localStorage.setItem("cartItems", JSON.stringify(state.item));
     },

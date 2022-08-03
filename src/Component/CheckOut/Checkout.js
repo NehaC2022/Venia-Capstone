@@ -12,7 +12,7 @@ export default function Checkout() {
     const [isShippingMethodActive, setIsShippingMethodActive]= useState(false); 
     const [isPaymentActive, setIsPaymentActive]= useState(false); 
     const [orderDetails, setOrderDetails] =useState(false);
-    // const [isSignInCheckout, setIsignInCheckout] =useState(true);
+
     const shippingInfoAccor=()=>{
         setIsShippingInfoActive(!isShippingInfoActive);
         setIsShippingMethodActive(!isShippingMethodActive);
@@ -25,9 +25,7 @@ export default function Checkout() {
         setIsPaymentActive(!isPaymentActive);
         setOrderDetails(!orderDetails)
     }
-    // const signInCheckout=()=>{
-    //     setIsignInCheckout(!isSignInCheckout)
-    // }
+    
     return (
         <section className='aem-Grid aem-Grid--12 container checkout'>
             <div className='aem-Grid aem-Grid--12 checkout-header'>
