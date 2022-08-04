@@ -1,0 +1,110 @@
+.adventure-banner {
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+
+.adventure-banner-image img {
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    padding: 1rem 0;
+
+}
+
+.adventure-banner-content {
+    background-color: $dark-gunmetal;
+    color: $white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: center;
+    padding: 82px 69px;
+    letter-spacing: 0px;
+        
+
+    h1 {
+
+        text-align: left;
+        font: normal normal 600 48px/60px Source Serif Pro;
+        color: #FFFFFF;
+    }
+
+    p {
+        margin: 1rem 0 2rem;
+        font: normal normal 600 20px/25px Muli;
+    }
+
+    .bar {
+        width: 102px;
+        height: 8px;
+        background-color: $primary-brand;
+        margin: 4rem auto 0;
+        left: 716px;
+        top: 1333px;
+        position: absolute;
+    }
+
+    .btn_device {
+        background-color: transparent;
+        color: $white;
+        width: 180px;
+        height: 40px;
+        border: 1px solid $white;
+        border-radius: 10px;
+        padding: 12px 0;
+        text-align: center;
+        font: normal normal bold 14px/16px Muli;
+    }
+}
+
+.location-icon {
+    width: 27px;
+    left: -82px;
+    top: -26px;
+    position: relative;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .adventure-banner {
+    //         // display: flex;
+    //         // flex-direction: column-reverse;
+        padding: 0;
+    }
+    .adventure-banner-content {
+        height: 19.375rem !important;
+        margin: -20% 7% 0;
+        width: 85% !important;
+        padding: 0;
+        justify-content: unset;
+
+        h1{
+            font: normal normal 600 36px/45px Source Serif Pro;
+        }
+        p{
+            font: normal normal 600 20px/24px Muli;
+        }
+        .bar{
+            left: 10px;
+        top: 2541px;
+        }
+    }
+
+        .adventure-banner-image {
+            padding: 0;
+        }
+        .adventure-banner-image img{
+            height: 12rem!important;
+        }
+    .adventure_heading {
+        display: none;
+    }
+    .location-icon {
+        left: 22px;
+        top: -243px;
+    }
+}
+
+
+    

@@ -4,7 +4,8 @@ import Button from '../Button'
 import { Accordian } from '../Accordian';
 
 export default function ShippingMethod({shippingMethodAccor}) {
-    const [shippingData, setShippingData] = useState();
+    const [shippingData, setShippingData] = useState("Standard Shipping (4-8 business days via USPS) FREE");
+    const [checked, setChecked] = useState("Standard Shipping (4-8 business days via USPS) FREE");
     const Radiohandal = (e) => {
         e.preventDefault();
         window.localStorage.setItem("shippingData", JSON.stringify(shippingData));
@@ -18,7 +19,7 @@ export default function ShippingMethod({shippingMethodAccor}) {
                 <h5>2. Shipping Method</h5>
                 <form>
                     <div className="radio-button">
-                        <input type="radio" name=" shippingType" value="Standard Shipping (4-8 business days via USPS) FREE" onChange={e => setShippingData(e.target.value)}/>
+                        <input type="radio" name=" shippingType" id="Standard Shipping (4-8 business days via USPS) FREE" value="Standard Shipping (4-8 business days via USPS) FREE" defaultChecked={checked==="Standard Shipping (4-8 business days via USPS) FREE"} onChange={e => setShippingData(e.target.value)} />
                         <label htmlFor="standard-shipping">Standard Shipping (4-8 business days via USPS) FREE</label>
                     </div>
                     <div className="radio-button">

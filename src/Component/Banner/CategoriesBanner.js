@@ -7,7 +7,7 @@ export default function CategoriesBanner() {
             {
                 Categories.map((value)=>{
                     return(
-                        <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--12 categories-data'>
+                        <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 categories-data'>
                             <div className='category-img'>
                                 <img src={value.img} alt={value.alt} aria-label={value.alt} />
                             </div>

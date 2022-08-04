@@ -4,10 +4,10 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar/Navbar';
 import Footer from './Component/Footer/Footer';
 import Product from './Component/Product/product';
-import ProductHome from './Component/Product/ProductHome';
-import ShoppingCart from './Component/ShoppingCart/ShoppingCart';
+import ProductHome from './Pages/ProductHome/ProductHome';
+import ShoppingCart from './Pages/ShoppingCart/ShoppingCart';
 import Home from './Layout/Home';
-import Checkout from './Component/CheckOut/Checkout';
+import Checkout from './Pages/CheckOut/Checkout';
 import OrderConfirmation from './Pages/OrderConfirmation/OrderConfirmation';
 
 function App() {
