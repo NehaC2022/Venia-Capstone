@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Venia-Capstone/static/css/main.8dd7f2a4.css",
-    "main.js": "/Venia-Capstone/static/js/main.dcbbe808.js",
+    "main.css": "/Venia-Capstone/static/css/main.03b066d0.css",
+    "main.js": "/Venia-Capstone/static/js/main.141eeb31.js",
     "static/js/787.f1d8e6b8.chunk.js": "/Venia-Capstone/static/js/787.f1d8e6b8.chunk.js",
     "static/media/banner-third.png": "/Venia-Capstone/static/media/banner-third.941b3a47a845e8dcda15.png",
     "static/media/banner1.png": "/Venia-Capstone/static/media/banner1.bb7b8afbb76a3bd25233.png",
@@ -34,13 +34,13 @@
     "static/media/facebook.svg": "/Venia-Capstone/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
     "static/media/facebook1.svg": "/Venia-Capstone/static/media/facebook1.897a782aaeb2bb0a128ec0e3b0ee21c2.svg",
     "static/media/chevron-down.svg": "/Venia-Capstone/static/media/chevron-down.fadc45040e456e5cea02f3cd047ee412.svg",
-    "static/media/chevron-left.svg": "/Venia-Capstone/static/media/chevron-left.4ac6ee7882c74803488aa3c28a368590.svg",
-    "main.8dd7f2a4.css.map": "/Venia-Capstone/static/css/main.8dd7f2a4.css.map",
-    "main.dcbbe808.js.map": "/Venia-Capstone/static/js/main.dcbbe808.js.map",
+    "static/media/chevron-left.svg": "/Venia-Capstone/static/media/chevron-left.f2f47274f1da9017cddb804668c53aa9.svg",
+    "main.03b066d0.css.map": "/Venia-Capstone/static/css/main.03b066d0.css.map",
+    "main.141eeb31.js.map": "/Venia-Capstone/static/js/main.141eeb31.js.map",
     "787.f1d8e6b8.chunk.js.map": "/Venia-Capstone/static/js/787.f1d8e6b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dd7f2a4.css",
-    "static/js/main.dcbbe808.js"
+    "static/css/main.03b066d0.css",
+    "static/js/main.141eeb31.js"
   ]
 }
