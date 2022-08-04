@@ -18,8 +18,7 @@ export default function Banner() {
                     </div>
                 </div>
                 <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 banner-image'>
-                    <img src={require('../../images/banner-third.png')} alt='Banner' aria-label='Banner' className='desktop-signature-banner'/>
-                    {/* <img src={require('../../images/signatureBanner.png')} alt='Banner' aria-label='Banner' className='mobile-signature-banner'/> */}
+                    <img src={require('../../images/signatureBanner.png')} alt='Banner' aria-label='Banner' className='mobile-signature-banner'/>
                 </div>
             </div>
 

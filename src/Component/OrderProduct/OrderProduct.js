@@ -5,11 +5,7 @@ export default function OrderProduct() {
     const cartData = useSelector((value) =>
         value.cart.item
     );
-    // const cartCounter = useSelector((value)=>{
-    //     return value.cart.item
-    //   });
-      const totalCartItem = cartData.length;
-    // const count= items.quantity;
+    const totalCartItem = cartData.length;
     return (
             <div className='aem-Grid aem-Grid--12 product-summary'>
                 <h5>{totalCartItem} items in your order</h5>

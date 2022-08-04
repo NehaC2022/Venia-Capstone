@@ -61,29 +61,32 @@
 .location-icon {
     width: 27px;
     left: -82px;
-    top: -26px;
+    top: -70px;
     position: relative;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
 
     .adventure-banner {
-    //         // display: flex;
-    //         // flex-direction: column-reverse;
         padding: 0;
+        text-align: center;
+        align-items: center;
     }
     .adventure-banner-content {
         height: 19.375rem !important;
         margin: -20% 7% 0;
         width: 85% !important;
         padding: 0;
-        justify-content: unset;
+       text-align: center;
+       padding-top: 60px;
 
         h1{
             font: normal normal 600 36px/45px Source Serif Pro;
+            text-align: center;
         }
         p{
             font: normal normal 600 20px/24px Muli;
+            text-align: center;
         }
         .bar{
             left: 10px;
@@ -98,11 +101,18 @@
             height: 12rem!important;
         }
     .adventure_heading {
-        display: none;
+        visibility: hidden;
     }
     .location-icon {
         left: 22px;
-        top: -243px;
+        top: -291px;
+    }
+    .adventure-banner-content .bar {
+        left: 36px;
+        top: 2315px;
+    }
+    .btn_device{
+        margin: 0 auto;
     }
 }
 

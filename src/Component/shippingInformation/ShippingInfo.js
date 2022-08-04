@@ -5,14 +5,14 @@ import { NavLink } from "react-router-dom";
 
 export default function ShippingInfo({shippingInfoAccor}) {
     const [formData, setFormData] = useState({
-        email: " ",
-        phoneNumber: " ",
-        firstName: " ",
-        lastName: " ",
-        address1: " ",
+        email: "q_farhan@gmail.com",
+        phoneNumber: "+1 (555) 229-3367 ",
+        firstName: " Qadim",
+        lastName: "Farhan  ",
+        address1: " 1098 Wapello Street Altadena, California 91001 United States",
         address2: " ",
-        city: " ",
-        zip: " ",
+        city: " California",
+        zip: "91001 ",
 
     });
     const inputData = (e) => {
@@ -44,7 +44,7 @@ export default function ShippingInfo({shippingInfoAccor}) {
                 <form className="aem-Grid aem-Grid--12 contact_form">
                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12" style={{ paddingRight: "16px" }}>
                         <label htmlFor="Email">Email</label><br />
-                        <input type="text" id="email" name="email" value={formData.email} onChange={inputData} />
+                        <input type="text" id="email" name="email" placeholder="" value={formData.email} onChange={inputData} />
                     </div>
                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 " style={{ paddingleft: "16px" }}>
                         <label htmlFor="number">Phone Number</label><br />

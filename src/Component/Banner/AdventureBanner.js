@@ -4,10 +4,10 @@ import Button from '../Button'
 export default function AdventureBanner() {
     return (
         <section className='aem-Grid aem-Grid--12 aem-Grid--phone--12 container adventure-banner'>
-            <div className='aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 adventure-banner-image'>
+            <div className='aem-GridColumn aem-GridColumn--default--7  aem-GridColumn--tablet--12 aem-GridColumn--phone--12 adventure-banner-image'>
                 <img src={require('../../images/banner-first.png')} alt='men on top of hill' aria-label='men on top of hill'/>
             </div>
-            <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 adventure-banner-content'>
+            <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--5 aem-GridColumn--phone--12 adventure-banner-content'>
                 <h1>Conquer your </h1>
                 <h1 className='adventure_heading'> next adventure</h1>
                 <p>Lorem Ipsum Dolor Tempor</p>

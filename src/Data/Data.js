@@ -2,16 +2,6 @@ import Women from '../images/women_suit.png';
 import Men from '../images/mens_cotton_jacket.png';
 import Jewellery from '../images/white_gold_ring.png';
 import Electronics from '../images/samsung_TV.png';
-// export const NavList = [
-//     {
-//         id : 'NML0',
-//         menu1 : 'Home',
-//         menu2 : 'Women', 
-//         menu3 : 'Men',
-//         menu4 : 'Electronics', 
-//         menu5 : 'Jewellery', 
-//     },
-// ];
 export const NavList = [
     {
         id : 'NML0',

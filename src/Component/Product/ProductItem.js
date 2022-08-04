@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import ProductDescription from './ProductDescription';
-import Rating from './Rating';
 import { handleAction } from '../../redux/cartSlice';
 import SimpleImageSlider from "react-simple-image-slider";
 
-export default function ProductItem({ title, price, img, description, product, rating }) {
+export default function ProductItem({ title, price, img, description, product, rating}) {
     const dispatch = useDispatch();
     const addProduct = (product) => {
         dispatch(handleAction.addItem({ ...product }))
@@ -54,8 +53,8 @@ export default function ProductItem({ title, price, img, description, product, r
                         </div>
                         <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 large-image-carousel'>
                             <SimpleImageSlider
-                                width={400}
-                                height={550}
+                                width={300}
+                                height={500}
                                 images={images}
                                 showBullets={true}
                                 showNavs={true}
@@ -67,13 +66,15 @@ export default function ProductItem({ title, price, img, description, product, r
                     <h6>Clothing / Women’s / Outerwear</h6>
                     <h1>{title}</h1>
                     <h4>${price}</h4>
-                    {/* <div>
+                    <div className='rating-image'>
                         <img src={require("../../images/star.svg").default} alt="StarImage" aria-label='star-icon'/>
                         <img src={require("../../images/star.svg").default} alt="StarImage" aria-label='star-icon'/>
                         <img src={require("../../images/star.svg").default} alt="StarImage" aria-label='star-icon'/>
                         <img src={require("../../images/star.svg").default} alt="StarImage" aria-label='star-icon'/>
                         <img src={require("../../images/star.svg").default} alt="StarImage" aria-label='star-icon'/>
-                    </div> */}
+                        <span>(175)</span>
+                    </div>
+                    
                     {/* <Rating rating={rating}/> */}
                     <ProductDescription description={description} />
                     <div className='product-btn'>

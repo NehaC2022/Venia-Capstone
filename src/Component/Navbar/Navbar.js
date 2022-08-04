@@ -23,15 +23,6 @@ export default function Navbar() {
                     <ul>
                         {NavList.map((val) => {
                             return (
-                                // <>
-                                //     <li className='active'>{val.menu1}</li>
-                                //     <li>{val.menu2}</li>
-                                //     <li>{val.menu3}</li>
-                                //     <li>{val.menu4}</li>
-                                //     <li>{val.menu5}</li>
-                                // </>
-
-                                // <li key={val.id}><span>{val.menu}</span></li>
                                 <li key={val.id}><NavLink to=" " className='text-decoration'><span>{val.menu}</span></NavLink></li>
                             )
                         })}

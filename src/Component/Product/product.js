@@ -22,7 +22,7 @@ export default function Product() {
   }, [id])
   return (
     <section className='container'>
-      <ProductItem key={data.id} product={data} id={data.id} img={data.image} title={data.title} price={data.price} description={data.description} />
+      <ProductItem key={data.id} product={data} id={data.id} img={data.image} title={data.title} price={data.price} description={data.description} rating={data.rating}/>
     </section>
   )
 }
