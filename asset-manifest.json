@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Venia-Capstone/static/css/main.c20dae0e.css",
-    "main.js": "/Venia-Capstone/static/js/main.ac110e58.js",
+    "main.css": "/Venia-Capstone/static/css/main.503fc845.css",
+    "main.js": "/Venia-Capstone/static/js/main.89d640aa.js",
     "static/js/787.f1d8e6b8.chunk.js": "/Venia-Capstone/static/js/787.f1d8e6b8.chunk.js",
     "static/media/signatureBanner.png": "/Venia-Capstone/static/media/signatureBanner.e381db1c14abfc717006.png",
     "static/media/banner1.png": "/Venia-Capstone/static/media/banner1.bb7b8afbb76a3bd25233.png",
@@ -23,6 +23,7 @@
     "static/media/help-circle.svg": "/Venia-Capstone/static/media/help-circle.6e768c3bac19f3986961e860b1d13f2d.svg",
     "static/media/shopping-bag.svg": "/Venia-Capstone/static/media/shopping-bag.1ceb7d8208dd4937a06bd6a1ca592bf1.svg",
     "static/media/arrow-up.svg": "/Venia-Capstone/static/media/arrow-up.bffb5a388e9ce654e32b9665d1dbed6d.svg",
+    "static/media/x.svg": "/Venia-Capstone/static/media/x.18ffa5a5f6cf0611910c94c00b129ba6.svg",
     "static/media/map-pin.svg": "/Venia-Capstone/static/media/map-pin.0d4e63a3f4c1bcb24d8acd0db0f17485.svg",
     "static/media/lock.svg": "/Venia-Capstone/static/media/lock.d3d0ea0e070c5339396eebd1774b678d.svg",
     "static/media/arrow-down.svg": "/Venia-Capstone/static/media/arrow-down.ad1e372bfba7126beaef93d275515815.svg",
@@ -36,12 +37,12 @@
     "static/media/facebook1.svg": "/Venia-Capstone/static/media/facebook1.897a782aaeb2bb0a128ec0e3b0ee21c2.svg",
     "static/media/chevron-down.svg": "/Venia-Capstone/static/media/chevron-down.fadc45040e456e5cea02f3cd047ee412.svg",
     "static/media/chevron-left.svg": "/Venia-Capstone/static/media/chevron-left.f2f47274f1da9017cddb804668c53aa9.svg",
-    "main.c20dae0e.css.map": "/Venia-Capstone/static/css/main.c20dae0e.css.map",
-    "main.ac110e58.js.map": "/Venia-Capstone/static/js/main.ac110e58.js.map",
+    "main.503fc845.css.map": "/Venia-Capstone/static/css/main.503fc845.css.map",
+    "main.89d640aa.js.map": "/Venia-Capstone/static/js/main.89d640aa.js.map",
     "787.f1d8e6b8.chunk.js.map": "/Venia-Capstone/static/js/787.f1d8e6b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c20dae0e.css",
-    "static/js/main.ac110e58.js"
+    "static/css/main.503fc845.css",
+    "static/js/main.89d640aa.js"
   ]
 }
