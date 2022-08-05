@@ -6,22 +6,28 @@ export const NavList = [
     {
         id : 'NML0',
         menu : 'Home',
+        link : '/',
+        // class : 'active'
     },
     {
         id : 'NML1',
         menu : 'Women', 
+        link : "/producthome/womensClothing"
     },
     {
         id : 'NML2',
         menu : 'Men', 
+        link : "/producthome/mensClothing"
     },
     {
         id : 'NML3',
         menu : 'Electronics', 
+        link : "/producthome/electronics" 
     },
     {
         id : 'NML4',
-        menu : 'Jewellery', 
+        menu : 'Jewellery',
+        link : "/producthome/jwellery"
     },
 
 ];
@@ -119,4 +125,26 @@ export const Filtercolor = [
     }
 
 
+]
+export const filterCategories=[
+    {
+        id:"chk1-label",
+        name:"jewelery",
+        label:"Jewelery",
+    },
+    {
+        id:"chk2-label",
+        name:"electronics",
+        label:"Electronics",
+    },
+    {
+        id:"chk3-label",
+        name:"men's clothing",
+        label:"Men's Clothing",
+    },
+    {
+        id:"chk4-label",
+        name:"women's clothing",
+        label:"Women's Clothing",
+    },
 ]

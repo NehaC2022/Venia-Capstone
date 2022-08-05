@@ -38,9 +38,7 @@ useEffect(() => {
                 <label htmlFor="chk1-label">{category}</label><br />
 
               </div>
-
-
-            </>
+</>
           )
         })}
       </div>

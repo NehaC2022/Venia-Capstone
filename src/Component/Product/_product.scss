@@ -179,9 +179,11 @@ select {
         color: $dark-gunmetal-A1;
     }
 }
-.number-rating{
+
+.number-rating {
     display: inline;
 }
+
 .stars-outer {
     position: relative;
     display: inline-block;
@@ -343,6 +345,9 @@ select {
 .pagination ul li a :last-child {
     display: none;
 }
+.loader-heading {
+    font-size: 64px;
+}
 
 @media (min-width: 768px) {
     .large-image-carousel {
@@ -351,6 +356,9 @@ select {
         img {
             width: 100%;
         }
+    }
+    .mobile-content {
+        display: none;
     }
 }
 
@@ -364,6 +372,7 @@ select {
     .price-category {
         display: none;
     }
+
     .product-container {
         padding: 0;
     }
@@ -388,8 +397,20 @@ select {
         display: block;
     }
 
-}
+    .product-results {
+        text-align: center;
+    }
 
-.loader-heading {
-    font-size: 64px;
+    .mobile-content {
+        display: block;
+        padding-bottom: 2rem;
+
+        a {
+            // text-align: left;
+            text-decoration: underline;
+            font: normal normal 600 16px/20px Muli;
+            color: #181C24;
+        }
+    }
+
 }

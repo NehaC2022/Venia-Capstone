@@ -7,6 +7,7 @@ export default function ProductTeaser() {
   const [data, setData] = useState([]);
   const [loading, setloading] = useState(false)
   const [products, setProducts] = useState([]);
+  const [isclicked, setClicked]= useState(false);
   // const [isSelected, setisSelected] = useState(false);
   const fetchData = () => {
     setloading(true);
@@ -57,6 +58,7 @@ export default function ProductTeaser() {
   }
 
   return (
+    <>
     <section className='product-teaser'>
       <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 container'>
         <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn aem-GridColumn--phone--hide'>
@@ -71,7 +73,9 @@ export default function ProductTeaser() {
         </div>
       </div>
     </section>
-  )
+
+    </>
+      )
 }
 
 
