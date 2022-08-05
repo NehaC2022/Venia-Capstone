@@ -1,0 +1,100 @@
+.mobilefilter-menu {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    background-color: $white;
+    height: 200vh;
+    animation: moveToRight .5s ease-in-out;
+
+    @keyframes moveToRight {
+        0% {
+            transform: translateX(500px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+
+    h6 {
+        text-align: left;
+        font: normal normal 600 16px/24px Muli;
+        letter-spacing: 0px;
+        color: #181C24;
+    }
+
+    nav {
+
+        background-color: #E5E5E7;
+        padding: 11px 24px 13px 24px;
+        position: sticky;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                text-align: left;
+                font: normal normal 600 16px/24px Muli;
+                letter-spacing: 0.32px;
+                color: #1D1D1B;
+            }
+        }
+    }
+
+
+
+
+    .attribute {
+        padding: 16px 0 32px 24px;
+
+        border: 2px solid #D1D3D6;
+
+        a {
+            text-decoration: underline;
+            font: normal normal 600 14px/24px Muli;
+            letter-spacing: 0px;
+            color: #181C24;
+
+        }
+
+        .checkbox {
+            padding-top: 16px;
+
+            input {
+                accent-color: $primary-brand;
+                border: 2px solid $primary-brand;
+                width: 24px;
+                height: 24px;
+
+            }
+
+            label {
+                margin-left: 16px;
+                font: normal normal normal 16px/24px Muli;
+            }
+        }
+    }
+
+    .action {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+    }
+
+}
+.result-btn{
+    font: normal normal bold 14px/16px Muli;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: uppercase;
+background: #E26A2C 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #39373729;
+padding: 11px 40px;
+border: 1px solid #E26A2C;
+margin-top: 33px;
+}

@@ -7,8 +7,16 @@ export default function ProductTeaser() {
   const [data, setData] = useState([]);
   const [loading, setloading] = useState(false)
   const [products, setProducts] = useState([]);
-  const [isclicked, setClicked]= useState(false);
   // const [isSelected, setisSelected] = useState(false);
+  const [categories, setCategories] = useState(
+    {
+        electronics: false,
+        jewelery: false,
+        "men's clothing":false,
+        "women's clothing":false,
+
+    }
+)
   const fetchData = () => {
     setloading(true);
     fetch("https://fakestoreapi.com/products")
@@ -56,7 +64,11 @@ export default function ProductTeaser() {
     setData(updatedList);
     console.log(filter);
   }
-
+  const  handleChange = (e) => {
+    const { name } = e.target;
+    setCategories(()=>{return{...categories,[name]: !categories[name]}}
+    )
+  };
   return (
     <>
     <section className='product-teaser'>
@@ -67,7 +79,7 @@ export default function ProductTeaser() {
 
         <div className='aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12'>
           <div className='aem-GridColumn aem-GridColumn--phone--6'>
-            <Products data={data} loading={loading} products={products} sortProduct={sortProduct}/>
+            <Products data={data} loading={loading} products={products} sortProduct={sortProduct} handleChange={handleChange}/>
 
           </div>
         </div>

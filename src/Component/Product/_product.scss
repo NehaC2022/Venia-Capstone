@@ -405,11 +405,15 @@ select {
         display: block;
         padding-bottom: 2rem;
 
-        a {
+        li{
             // text-align: left;
             text-decoration: underline;
             font: normal normal 600 16px/20px Muli;
             color: #181C24;
+
+            img{
+                vertical-align: bottom;
+            }
         }
     }
 
